@@ -1,0 +1,9 @@
+item modify entity @a[team=White] container.0 minecraft:skeleton_skull
+item modify entity @a[team=White] container.1 minecraft:skeleton_skull
+item modify entity @a[team=White] container.2 minecraft:skeleton_skull
+item modify entity @a[team=White] container.3 minecraft:skeleton_skull
+item modify entity @a[team=White] container.4 minecraft:skeleton_skull
+item modify entity @a[team=White] container.5 minecraft:skeleton_skull
+item modify entity @a[team=White] container.6 minecraft:skeleton_skull
+item modify entity @a[team=White] container.7 minecraft:skeleton_skull
+item modify entity @a[team=White] container.8 minecraft:skeleton_skull
