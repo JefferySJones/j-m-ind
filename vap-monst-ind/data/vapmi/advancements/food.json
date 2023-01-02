@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": {
+            "text": "Food",
+            "color": "white"
+        },
+        "description": {
+            "text": "Get some coal for cooking",
+            "color": "blue"
+        },
+        "icon": {
+            "item": "minecraft:potato"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Get coal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:coal",
+                        "count": {
+                            "min": 1,
+                            "max": 1000000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:root"
+}

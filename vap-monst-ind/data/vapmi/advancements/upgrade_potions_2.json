@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "text": "Patent Lingering Potions",
+            "color": "white"
+        },
+        "description": {
+            "text": "Purchase the \"§9Buy Patent for Lingering Potions§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:lingering_potion",
+            "nbt": "{Potion:mundane}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Purchase lingering potion patent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:lingering_potion",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Buy Patent for Lingering Potions\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Potions to Tier III\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:upgrade_potions_1"
+}

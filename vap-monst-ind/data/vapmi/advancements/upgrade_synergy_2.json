@@ -1,0 +1,38 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Get Maximum Synergy",
+            "color": "dark_aqua"
+        },
+        "description": {
+            "text": "Purchase the \"§3Buy Ultimate Synergy Booster§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:beacon"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Buy Ultimate Synergy Booster": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:beacon",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Buy Ultimate Synergy Booster\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Synergy to Tier III\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 1000000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:upgrade_synergy_1"
+}

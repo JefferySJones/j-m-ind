@@ -1,0 +1,39 @@
+{
+    "display": {
+        "title": {
+            "text": "Patent Splash Potions",
+            "color": "white"
+        },
+        "description": {
+            "text": "Purchase the \"§9Buy Patent for Splash Potions§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:splash_potion",
+            "nbt": "{Potion:mundane}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Purchase splash potion patent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:splash_potion",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Buy Patent for Splash Potions\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Potions to Tier II\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:potions"
+}
+
