@@ -1,0 +1,38 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Invest in Gold Blocks",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Purchase the \"§6Invest in Gold Blocks§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:gold_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Pick up the upgrade for Invest in Gold Blocks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:gold_block",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Invest in Gold Blocks\\\",\\\"italic\\\":false,\\\"color\\\":\\\"gold\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Increase coin production by +1\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:upgrade_currency_1"
+}
