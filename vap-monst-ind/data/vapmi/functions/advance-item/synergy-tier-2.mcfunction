@@ -1,0 +1,1 @@
+give @p minecraft:diamond_block{display:{Name:'[{"text":"Buy Synergy Booster","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Synergy to Tier II","italic":true,"color":"aqua"}]']}}

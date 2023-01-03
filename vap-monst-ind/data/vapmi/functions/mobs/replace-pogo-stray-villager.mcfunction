@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:villager,name="BVgrStray"] run execute at @s run summon minecraft:magma_cube ~ ~ ~ {Passengers:[{id:"slime",Passengers:[{id:"slime",Passengers:[{id:"stray",CustomName:'"Pogo Stray"',HandItems:[{id:"bow",tag:{Enchantments:[{id:"minecraft:flame",lvl:1}]},Count:1}],ArmorItems:[{id:"diamond_boots",Count:1},{id:"diamond_leggings",Count:1},{id:"diamond_chestplate",Count:1},{id:"diamond_helmet",Count:1}],HandDropChances:[0F],ArmorDropChances:[0F,0F,0F,0F]}]}]}]}
+execute as @e[type=minecraft:villager,name="BVgrStray"] run kill @s

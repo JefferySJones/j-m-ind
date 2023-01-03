@@ -1,0 +1,1 @@
+give @p minecraft:beacon{display:{Name:'[{"text":"Buy Ultimate Synergy Booster","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Synergy to Tier III","italic":true,"color":"aqua"}]']}}
