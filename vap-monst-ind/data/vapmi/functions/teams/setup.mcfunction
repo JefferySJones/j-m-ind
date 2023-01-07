@@ -19,6 +19,7 @@ team add Red "Magma Cube"
 team add Purple "Enderman"
 team add White "Skeleton"
 team add Spectator "Spectator"
+team add Debug "Debug"
 
 # Modify Team Colors
 team modify Blue color blue
