@@ -9,7 +9,9 @@ execute if score _RED_TARGET GameState matches 6 run execute unless entity @e[na
 execute if score _RED_TARGET GameState matches 7 run execute unless entity @e[name="SpawnP"] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"game\/teleport-from\/red: Unable to find armor_stand named SpawnP", "color": "gray", "bold": false}]
 execute if score _RED_TARGET GameState matches 8 run execute unless entity @e[name="SpawnW"] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"game\/teleport-from\/red: Unable to find armor_stand named SpawnW", "color": "gray", "bold": false}]
 
+# tp to X Y Z -- THEN...
 # summon minecraft:armor_stand ~ ~1 ~ {NoGravity:1, CustomName:'{"text":"CenterR"}', CustomNameVisible:true}
+
 # TODO: Update Relative Positioning from "Center"
 # Pick Matching Target, Get Entitys At the Spawner using CenterR, Radius the size of spawner (0..2), Teleport to random spawn point of the target color
 execute if score _RED_TARGET GameState matches 1 run execute at @e[name="CenterR"] positioned ~8 ~ ~ run execute as @e[distance=0..2,team=Red,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnR",sort=random,limit=1] run tp ~ ~4 ~
