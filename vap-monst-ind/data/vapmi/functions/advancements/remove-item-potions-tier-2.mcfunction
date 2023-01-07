@@ -1,0 +1,1 @@
+clear @a[advancements={monster-ind:upgrade_potions_1=true}] minecraft:splash_potion{'display':{'Name':'[{"text":"Buy Patent for Splash Potions","italic":false,"color":"dark_aqua"}]','Lore':['[{"text":"Upgrade Potions to Tier II","italic":true,"color":"aqua"}]']}}
