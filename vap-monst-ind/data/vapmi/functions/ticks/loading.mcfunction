@@ -18,28 +18,28 @@ scoreboard players reset @a[scores={Jump=1..9999999}] Jump
 
 # Red Join Team
 execute at @e[name="TeamPickR"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-red
-execute at @e[name="TeamPickR"] run tp @e[team=Red,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickR"] run tp @e[team=Red,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Orange Join Team 
-execute at @e[name="TeamPickO"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-orange
-execute at @e[name="TeamPickO"] run tp @e[team=Orange,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickO"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-orange
+execute at @e[name="TeamPickO"] run tp @e[team=Orange,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Yellow Join Team 
-execute at @e[name="TeamPickY"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-yellow
-execute at @e[name="TeamPickY"] run tp @e[team=Yellow,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickY"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-yellow
+execute at @e[name="TeamPickY"] run tp @e[team=Yellow,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Green Join Team 
-execute at @e[name="TeamPickG"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-green
-execute at @e[name="TeamPickG"] run tp @e[team=Green,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickG"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-green
+execute at @e[name="TeamPickG"] run tp @e[team=Green,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Blue Join Team 
-execute at @e[name="TeamPickB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-blue
-execute at @e[name="TeamPickB"] run tp @e[team=Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-blue
+execute at @e[name="TeamPickB"] run tp @e[team=Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Dark Blue Join Team 
-execute at @e[name="TeamPickDB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-dark_blue
-execute at @e[name="TeamPickDB"] run tp @e[team=Dark_Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickDB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-dark_blue
+execute at @e[name="TeamPickDB"] run tp @e[team=Dark_Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Purple Join Team 
-execute at @e[name="TeamPickP"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-purple
-execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickP"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-purple
+execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # White Join Team 
-execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-white
-execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-white
+execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 
 # Give heads of colors
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Red] run function vapmi:heads/give-red
@@ -50,6 +50,13 @@ execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Blue] run func
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Dark_Blue] run function vapmi:heads/give-dark_blue
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Purple] run function vapmi:heads/give-purple
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=White] run function vapmi:heads/give-white
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Spectator] run function vapmi:heads/give-spectator
+
+# Allow player to leave team by crouching near "Team Picked"
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1 run team join Loading @e[team=!,distance=0..2,scores={Crouching=1..999}]
+
+# Teleport player that left team to team pick spawn
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @e[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
  
 execute if score _SET_GAME_READY GameState matches 0 run execute unless entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 1
 execute if score _SET_GAME_READY GameState matches 1 run execute if entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 0
