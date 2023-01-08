@@ -58,6 +58,9 @@ execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0.
 # Give Saturation to players
 execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
 
+# Sets spawn point to spawn entity
+execute if score _EVERY_TEN_SECONDS Timers matches 0 as @e[name="TeamPickSpawn",limit=1,sort=nearest] positioned ~ ~1 ~ run spawnpoint @a ~ ~ ~
+
 # Teleport player that left team to team pick spawn
 execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @p[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
  
