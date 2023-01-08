@@ -53,13 +53,13 @@ execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=White] run fun
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Spectator] run function vapmi:heads/give-spectator
 
 # Allow player to leave team by crouching near "Team Picked"
-execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1 run team join Loading @e[team=!,distance=0..2,scores={Crouching=1..999}]
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1 run team join Loading @p[team=!,distance=0..2,scores={Crouching=1..999}]
 
 # Give Saturation to players
 execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
 
 # Teleport player that left team to team pick spawn
-execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @e[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @p[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
  
 execute if score _SET_GAME_READY GameState matches 0 run execute unless entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 1
 execute if score _SET_GAME_READY GameState matches 1 run execute if entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 0
