@@ -1,0 +1,37 @@
+{
+    "display": {
+        "title": {
+            "text": "Beverages",
+            "color": "white"
+        },
+        "description": {
+            "text": "Get a spider eye",
+            "color": "blue"
+        },
+        "icon": {
+            "item": "minecraft:potion",
+            "nbt": "{Potion:mundane}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Get a spider eye": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spider_eye",
+                        "count": {
+                            "min": 1,
+                            "max": 1000000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:root"
+}

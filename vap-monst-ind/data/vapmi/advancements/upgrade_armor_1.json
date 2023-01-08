@@ -1,0 +1,38 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Patent Iron Armor",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Purchase the \"§5Buy Patent for Iron Armor§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:iron_chestplate"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Purchase iron armor patent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_horse_armor",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Buy Patent for Iron Armor\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Armorer to Tier II\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:armor"
+}
