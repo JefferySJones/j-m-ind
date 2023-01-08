@@ -5,7 +5,6 @@ scoreboard objectives add dmyPlayerDeaths dummy "Dummy Player Deaths"
 scoreboard objectives add Constants dummy "Constants"
 scoreboard objectives add GameState dummy "Game State"
 scoreboard objectives add Coins dummy "Coins"
-scoreboard objectives add DEBUG dummy
 
 # Villager State
 scoreboard objectives add VillagerStateRed dummy "Villager State"
@@ -23,7 +22,6 @@ scoreboard objectives add Crouching minecraft.custom:minecraft.crouch_one_cm "Pl
 
 # Initialize _CURRENT Gamestate
 scoreboard players set _CURRENT GameState 0
-scoreboard players set _SEE_ARMOR DEBUG 0
 
 function vapmi:utilities/fresh-scores
 
