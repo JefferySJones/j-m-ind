@@ -1,14 +1,14 @@
 tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Running setup-spawner", "color": "gray", "bold": false}]
 
 # Clone Spawner 
-execute unless entity @e[name="CenterR",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterR", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterO",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterO", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterY",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterY", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterG",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterG", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterB",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterB", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterDB",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterDB", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterP",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterP", "color": "gray", "bold": false}]
-execute unless entity @e[name="CenterW",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"Unable to find armor_stand named CenterW", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterR",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterR", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterO",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterO", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterY",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterY", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterG",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterG", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterB",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterB", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterDB",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterDB", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterP",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterP", "color": "gray", "bold": false}]
+execute unless entity @e[name="CenterW",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterW", "color": "gray", "bold": false}]
 
 # TODO: Update Maths for locations of spawners
 execute at @e[name="CenterR",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
