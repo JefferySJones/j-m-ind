@@ -23,7 +23,7 @@
                 "items": [
                     {
                         "item": "minecraft:sunflower",
-                        "nbt": "{id:\"Gold Coin\",display:{Name:\"{\"text\":\"\\u00A76Gold Coin\"}\"}}",
+                        "nbt": "{id:\"Gold Coin\",display:{Name:\"{\\\"text\\\":\\\"\\\\u00A76Gold Coin\\\"}\"}}",
                         "count": {
                             "min": 1,
                             "max": 1000000
