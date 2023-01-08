@@ -1,0 +1,1 @@
+clear @a[advancements={monster-ind:upgrade_weapons_2=true}] minecraft:book{display:{Name:'[{"text":"Buy Patent for Diamond Weapons","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Weapons to Tier III","italic":true,"color":"aqua"}]']}}

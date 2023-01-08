@@ -1,0 +1,1 @@
+clear @a[advancements={monster-ind:upgrade_synergy_2=true}] minecraft:beacon{display:{Name:'[{"text":"Buy Ultimate Synergy Booster","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Synergy to Tier III","italic":true,"color":"aqua"}]']}}

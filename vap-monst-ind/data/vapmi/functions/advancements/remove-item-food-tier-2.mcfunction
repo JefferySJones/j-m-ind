@@ -1,0 +1,1 @@
+clear @a[advancements={monster-ind:upgrade_food_1=true}] minecraft:honey_bottle{'display':{'Name':'[{"text":"Learn To Cook With Honey","italic":false,"color":"dark_aqua"}]','Lore':['[{"text":"Upgrade Food to Tier II","italic":true,"color":"aqua"}]']}}
