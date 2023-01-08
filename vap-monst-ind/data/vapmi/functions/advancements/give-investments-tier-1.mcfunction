@@ -1,0 +1,1 @@
+give @p minecraft:sunflower{id:"Gold Coin", display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
