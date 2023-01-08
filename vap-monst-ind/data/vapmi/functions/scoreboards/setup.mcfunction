@@ -27,6 +27,15 @@ scoreboard players set _CURRENT GameState 0
 scoreboard players set _SIDEBAR GameState 0
 scoreboard players set _SIDEBAR_LOCK GameState 0
 
+# Target: [0: NONE, 1: RED, 2: ORANGE, 3: YELLOW, 4: GREEN, 5: BLUE, 6: DARK_BLUE, 7: PURPLE, 8: WHITE]
+scoreboard players set _RED_TARGET GameState 0
+scoreboard players set _ORANGE_TARGET GameState 0
+scoreboard players set _YELLOW_TARGET GameState 0
+scoreboard players set _GREEN_TARGET GameState 0
+scoreboard players set _BLUE_TARGET GameState 0
+scoreboard players set _DARK_BLUE_TARGET GameState 0
+scoreboard players set _PURPLE_TARGET GameState 0
+scoreboard players set _WHITE_TARGET GameState 0
 
 # execute as @a store result score @s <scoreboard> run clear @s <item> 0
 
