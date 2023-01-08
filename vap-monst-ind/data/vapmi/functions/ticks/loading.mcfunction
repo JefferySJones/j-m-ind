@@ -20,10 +20,10 @@ execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0.
 execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1..9999999 run tp @p[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
 
 # Delete all items around people who are in the 'loading' team
-execute if score _EVERY_SECOND Timers matches 0 as @a run kill @e[type=minecraft:item,distance=0..10]
+execute if score _EVERY_SECOND Timers matches 0 at @a run kill @e[type=minecraft:item,distance=0..30]
 
 # Give Saturation to players
-execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
+execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked",type=armor_stand] run effect give @a[distance=0..20] minecraft:saturation 2 10 true
 
 # Reset Scores
 scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
@@ -53,6 +53,10 @@ execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=n
 # White Join Team 
 execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-white
 execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+# Spectator Join Team 
+execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-spectator
+execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+
 
 # Give heads of colors
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Red] run function vapmi:heads/give-red
