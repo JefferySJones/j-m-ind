@@ -1,1 +1,1 @@
-team leave @a
+team join Loading @a[team=!Debug,gamemode=!spectator]
