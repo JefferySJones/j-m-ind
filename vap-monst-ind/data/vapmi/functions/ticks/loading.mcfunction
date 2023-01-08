@@ -55,6 +55,9 @@ execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Spectator] run
 # Allow player to leave team by crouching near "Team Picked"
 execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1 run team join Loading @e[team=!,distance=0..2,scores={Crouching=1..999}]
 
+# Give Saturation to players
+execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
+
 # Teleport player that left team to team pick spawn
 execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @e[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
  
