@@ -1,0 +1,1 @@
+execute as @a[team=Loading] run kill @e[type=minecraft:item,dx=28,dz=27,dy=8]
