@@ -6,4 +6,3 @@ execute if score _CURRENT GameState matches 2 run function vapmi:ticks/started
 execute if score _CURRENT GameState matches 3 run function vapmi:ticks/ending
 execute if score _CURRENT GameState matches 4 run function vapmi:ticks/ended
 
-execute if score _SEE_ARMOR DEBUG matches 1 run function vapmi:utilities/debug/see-armorstands
