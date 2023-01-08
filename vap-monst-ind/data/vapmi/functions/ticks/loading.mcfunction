@@ -30,7 +30,7 @@ scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
 scoreboard players reset @a[scores={Jump=1..9999999}] Jump
 
 # Red Join Team
-execute at @e[name="TeamPickR"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-red
+execute at @e[name="TeamPickR"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-red
 execute at @e[name="TeamPickR"] run tp @e[team=Red,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 # Orange Join Team 
 execute at @e[name="TeamPickO"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-orange
