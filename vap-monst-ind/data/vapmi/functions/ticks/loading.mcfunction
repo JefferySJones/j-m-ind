@@ -40,6 +40,16 @@ execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=n
 # White Join Team 
 execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-white
 execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+
+# Give heads of colors
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Red] run function vapmi:heads/give-red
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Yellow] run function vapmi:heads/give-yellow
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Orange] run function vapmi:heads/give-orange
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Green] run function vapmi:heads/give-green
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Blue] run function vapmi:heads/give-blue
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Dark_Blue] run function vapmi:heads/give-dark_blue
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Purple] run function vapmi:heads/give-purple
+execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=White] run function vapmi:heads/give-white
  
 execute if score _SET_GAME_READY GameState matches 0 run execute unless entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 1
 execute if score _SET_GAME_READY GameState matches 1 run execute if entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 0
