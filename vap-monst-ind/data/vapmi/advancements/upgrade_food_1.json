@@ -1,0 +1,37 @@
+{
+    "display": {
+        "title": {
+            "text": "Learn To Cook With Honey",
+            "color": "white"
+        },
+        "description": {
+            "text": "Purchase the \"§7Learn To Cook With Honey§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:honey_bottle"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Purchase iron armor patent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:honey_bottle",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Learn To Cook With Honey\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Food to Tier II\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:food"
+}

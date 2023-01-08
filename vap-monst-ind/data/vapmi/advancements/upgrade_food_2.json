@@ -1,0 +1,37 @@
+{
+    "display": {
+        "title": {
+            "text": "Take a Cooking Class",
+            "color": "white"
+        },
+        "description": {
+            "text": "Purchase the \"§7Take a Cooking Class§f\" upgrade",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:cake"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Purchase iron armor patent": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:cake",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Take a Cooking Class\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_aqua\\\"}]\",Lore:[\"[{\\\"text\\\":\\\"Upgrade Food to Tier III\\\",\\\"italic\\\":true,\\\"color\\\":\\\"aqua\\\"}]\"]}}",
+                        "count": {
+                            "min": 1,
+                            "max": 100000
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "monster-ind:upgrade_food_1"
+}
