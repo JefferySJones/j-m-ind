@@ -1,4 +1,4 @@
-# This is meant to 
+# This is meant to house values that should be reset at the start of each game, but not values that should only change on load.
 
 # Clear existing scoreboard stuff
 scoreboard players set @a[scores={PlayerDeaths=1..999}] PlayerDeaths 0
@@ -24,8 +24,11 @@ scoreboard players set _DARK_BLUE_TARGET GameState 0
 scoreboard players set _PURPLE_TARGET GameState 0
 scoreboard players set _WHITE_TARGET GameState 0
 
-
 scoreboard players set _VILLAGERS_INITIALIZED GameState 0
+scoreboard players set _COUNTDOWN GameState 10
+scoreboard players set _CURRENT GameState 0
+scoreboard players set _SEE_ARMOR DEBUG 0
+scoreboard players set _SET_GAME_READY GameState 0
 
 # Investments
 scoreboard players set _INVESTMENTS_TIER VillagerStateRed 0

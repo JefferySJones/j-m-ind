@@ -1,3 +1,5 @@
+execute if score _EVERY_TEN_SECONDS Timers matches 0 run say "Started!"
+
 # Scoreboard Updates
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:scoreboards/count-coins
 execute if score SWITCH_DISPLAY Timers matches 0 run function vapmi:scoreboards/toggle-sidebar

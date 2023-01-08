@@ -25,6 +25,7 @@ scoreboard objectives add Crouching minecraft.custom:minecraft.crouch_one_cm "Pl
 scoreboard players set _CURRENT GameState 0
 scoreboard players set _SEE_ARMOR DEBUG 0
 scoreboard players set _SET_GAME_READY GameState 0
+scoreboard players set _COUNTDOWN GameState 10
 
 function vapmi:utilities/fresh-scores
 

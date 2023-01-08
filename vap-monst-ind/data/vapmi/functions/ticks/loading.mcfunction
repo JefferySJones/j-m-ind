@@ -1,3 +1,5 @@
+execute if score _EVERY_TEN_SECONDS Timers matches 0 run say "Loading!"
+
 # Remove player heads from no-teamers
 clear @a[team=] minecraft:player_head
 clear @a[team=] minecraft:skeleton_skull
