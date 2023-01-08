@@ -1,6 +1,6 @@
 execute if score _EVERY_TEN_SECONDS Timers matches 0 run say "Loading!"
 
-clear @a minecraft:sunflower{id:"Gold Coin", display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
+clear @a minecraft:sunflower{display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
 team join Loading @a[team=]
 
 # Remove player heads from no-teamers

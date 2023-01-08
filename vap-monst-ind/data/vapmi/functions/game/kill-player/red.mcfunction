@@ -9,7 +9,7 @@ execute at @e[name="CenterR"] run kill @e[type=!minecraft:armor_stand,type=!mine
 clear @p[team=Red,scores={PlayerDeaths=1..999}] nether_star 1
 
 # Remove 1 Stack of Coins
-clear @p[team=Red,scores={PlayerDeaths=1..999}] minecraft:sunflower{id:"Gold Coin"} 64
+clear @p[team=Red,scores={PlayerDeaths=1..999}] minecraft:sunflower{display:{Name:'{"text":"\\u00A76Gold Coin"}'}} 64
 
 # Set actual player deaths back to 0, and track in dummy player deaths
 scoreboard players add @p[team=Red,scores={PlayerDeaths=1..999}] dmyPlayerDeaths 1

@@ -14,6 +14,12 @@ execute if score Red Stocks matches 1..2147483647 run function vapmi:game/watch-
 
 execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:villagers/initialize-villagers
 
+# Spawn Coins
+# FIXME: The location for "Currency" might not need to be 8 above a polished blackstone
+function vapmi:game/currency/spawn-red-safe
+
+
+
 #--- Villagers and Tiers ---#
 # FIXME: Villagers will spawn and kill directly on ~ ~ ~ of Center{Color} currently
 function vapmi:utilities/manage-tiers/investments-1
