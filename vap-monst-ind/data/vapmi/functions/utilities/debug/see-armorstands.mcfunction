@@ -1,5 +1,6 @@
 effect give @e[type=armor_stand] minecraft:glowing 2 1 true
-execute at @e[type=armor_stand,team=] run function vapmi:utilities/dust-cloud/gray
+execute at @e[type=armor_stand,team=] run function vapmi:utilities/dust-cloud/black
+execute at @e[type=armor_stand,team=Spectator] run function vapmi:utilities/dust-cloud/gray
 execute at @e[type=armor_stand,team=Red] run function vapmi:utilities/dust-cloud/red
 execute at @e[type=armor_stand,team=Orange] run function vapmi:utilities/dust-cloud/orange
 execute at @e[type=armor_stand,team=Yellow] run function vapmi:utilities/dust-cloud/yellow
