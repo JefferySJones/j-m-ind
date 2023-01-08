@@ -34,7 +34,7 @@ execute at @e[name="CenterP",type=armor_stand] positioned ~ ~ ~ run tp @a[team=P
 execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run tp @a[team=White] ~ ~ ~
 
 # TP Spectators
-execute at @e[name="CenterSpec",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Spectator] ~ ~ ~
+execute at @e[name="CenterSp",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Spectator] ~ ~ ~
 
 # TODO: Adjust spawnpoint rel position
 execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Red] ~ ~ ~
