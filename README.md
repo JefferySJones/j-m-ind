@@ -18,4 +18,5 @@
 ### Future Ideas
 Future Ideas: Show how many players are in each team in the lobby
 Future Ideas: Make dying mobs drop coins
+Future Ideas: Harder mobs to defeat would drop more and easier mobs would drop less
 
