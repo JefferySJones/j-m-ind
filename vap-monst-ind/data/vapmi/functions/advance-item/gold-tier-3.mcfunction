@@ -1,0 +1,1 @@
+give @p minecraft:gold_block{display:{Name:'[{"text":"Invest in Gold Blocks","italic":false,"color":"gold"}]',Lore:['[{"text":"Increase coin production by +1","italic":true,"color":"aqua"}]']}}
