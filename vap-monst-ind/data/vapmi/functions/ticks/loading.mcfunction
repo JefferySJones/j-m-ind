@@ -1,16 +1,29 @@
 execute if score _EVERY_TEN_SECONDS Timers matches 0 run say "Loading!"
 
-# Remove player heads from no-teamers
-clear @a[team=] minecraft:player_head
-clear @a[team=] minecraft:skeleton_skull
-clear @a[team=] minecraft:creeper_head
 clear @a minecraft:sunflower{id:"Gold Coin", display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
-team join Loading @e[type=player,team=]
+team join Loading @a[team=]
+
+# Remove player heads from no-teamers
+clear @a[team=Loading] minecraft:player_head
+clear @a[team=Loading] minecraft:skeleton_skull
+clear @a[team=Loading] minecraft:creeper_head
 
 function vapmi:advancements/revoke-all
 
+# Sets spawn point to spawn entity
+execute if score _EVERY_TEN_SECONDS Timers matches 0 as @e[name="TeamPickSpawn",limit=1,sort=nearest] positioned ~ ~1 ~ run spawnpoint @a ~ ~ ~
+
+# Allow player to leave team by crouching near "Team Picked"
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1..9999999 run team join Loading @p[team=!,distance=0..2,scores={Crouching=1..999}]
+
+# Teleport player that left team to team pick spawn
+execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1..9999999 run tp @p[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
+
 # Delete all items around people who are in the 'loading' team
-execute as @a[team=Loading,gamemode=!spectator] run kill @e[type=minecraft:item,distance=0..5]
+execute if score _EVERY_SECOND Timers matches 0 as @a run kill @e[type=minecraft:item,distance=0..10]
+
+# Give Saturation to players
+execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
 
 # Reset Scores
 scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
@@ -51,19 +64,8 @@ execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Dark_Blue] run
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Purple] run function vapmi:heads/give-purple
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=White] run function vapmi:heads/give-white
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Spectator] run function vapmi:heads/give-spectator
-
-# Allow player to leave team by crouching near "Team Picked"
-execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=!,distance=0..2] Crouching matches 1 run team join Loading @p[team=!,distance=0..2,scores={Crouching=1..999}]
-
-# Give Saturation to players
-execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked"] run effect give @a[distance=0..20] minecraft:saturation 1 10 true
-
-# Sets spawn point to spawn entity
-execute if score _EVERY_TEN_SECONDS Timers matches 0 as @e[name="TeamPickSpawn",limit=1,sort=nearest] positioned ~ ~1 ~ run spawnpoint @a ~ ~ ~
-
-# Teleport player that left team to team pick spawn
-execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,distance=0..2] Crouching matches 1 run tp @p[team=Loading,distance=0..2] @e[name="TeamPickSpawn",limit=1,sort=nearest]
  
+# Start Game Message
 execute if score _SET_GAME_READY GameState matches 0 run execute unless entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 1
 execute if score _SET_GAME_READY GameState matches 1 run execute if entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 0
 execute if score _SET_GAME_READY GameState matches 1 if score _EVERY_TEN_SECONDS Timers matches 0 run function vapmi:game/start-game-message
