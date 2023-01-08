@@ -5,6 +5,9 @@ scoreboard objectives remove Stocks
 scoreboard objectives remove Constants
 scoreboard objectives remove PlayerDeaths
 scoreboard objectives remove dmyPlayerDeaths
+scoreboard objectives remove Crouching
+scoreboard objectives remove Jump
+scoreboard objectives remove GameState
 
 # Remove All Teams
 team remove Loading
@@ -17,6 +20,7 @@ team remove Red
 team remove Purple
 team remove White
 team remove Spectator
+team remove Debug
 
-datapack disable "file/vap-monster-ind"
+datapack disable "file/vap-monst-ind"
 
