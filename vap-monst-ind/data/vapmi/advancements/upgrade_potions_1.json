@@ -5,7 +5,7 @@
             "color": "white"
         },
         "description": {
-            "text": "Purchase the \"§9Buy Patent for Splash Potions§f\" upgrade",
+            "text": "Purchase the \"§9Buy Patent for Splash Potions§r\" upgrade",
             "color": "white"
         },
         "icon": {
@@ -34,6 +34,6 @@
             }
         }
     },
-    "parent": "monster-ind:potions"
+    "parent": "vapmi:potions"
 }
 

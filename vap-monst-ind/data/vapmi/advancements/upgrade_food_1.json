@@ -5,7 +5,7 @@
             "color": "white"
         },
         "description": {
-            "text": "Purchase the \"§7Learn To Cook With Honey§f\" upgrade",
+            "text": "Purchase the \"§7Learn To Cook With Honey§r\" upgrade",
             "color": "white"
         },
         "icon": {
@@ -33,5 +33,5 @@
             }
         }
     },
-    "parent": "monster-ind:food"
+    "parent": "vapmi:food"
 }

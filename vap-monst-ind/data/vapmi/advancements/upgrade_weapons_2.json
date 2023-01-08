@@ -6,7 +6,7 @@
             "color": "dark_red"
         },
         "description": {
-            "text": "Purchase the \"§4Buy Patent for Diamond Weapons§f\" upgrade"
+            "text": "Purchase the \"§4Buy Patent for Diamond Weapons§r\" upgrade"
         },
         "icon": {
             "item": "minecraft:diamond_sword"
@@ -33,5 +33,5 @@
             }
         }
     },
-    "parent": "monster-ind:upgrade_weapons_1"
+    "parent": "vapmi:upgrade_weapons_1"
 }

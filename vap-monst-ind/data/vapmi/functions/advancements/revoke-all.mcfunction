@@ -1,1 +1,1 @@
-advancement revoke @a everything
+advancement revoke @a[advancements={vapmi:seed_money=true}] everything

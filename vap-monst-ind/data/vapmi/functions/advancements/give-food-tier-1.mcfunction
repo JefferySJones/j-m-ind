@@ -1,0 +1,1 @@
+give @p minecraft:coal{display:{Name:'[{"text":"Coal"}]'}}

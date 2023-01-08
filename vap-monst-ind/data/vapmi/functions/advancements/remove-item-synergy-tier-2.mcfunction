@@ -1,1 +1,1 @@
-clear @a[advancements={monster-ind:upgrade_synergy_1=true}] minecraft:diamond_block{display:{Name:'[{"text":"Buy Synergy Booster","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Synergy to Tier II","italic":true,"color":"aqua"}]']}}
+clear @a[advancements={vapmi:upgrade_synergy_1=true}] minecraft:diamond_block{display:{Name:'[{"text":"Buy Synergy Booster","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Synergy to Tier II","italic":true,"color":"aqua"}]']}}

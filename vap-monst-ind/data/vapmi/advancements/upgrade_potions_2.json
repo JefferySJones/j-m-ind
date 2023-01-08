@@ -5,7 +5,7 @@
             "color": "white"
         },
         "description": {
-            "text": "Purchase the \"§9Buy Patent for Lingering Potions§f\" upgrade",
+            "text": "Purchase the \"§9Buy Patent for Lingering Potions§r\" upgrade",
             "color": "white"
         },
         "icon": {
@@ -34,5 +34,5 @@
             }
         }
     },
-    "parent": "monster-ind:upgrade_potions_1"
+    "parent": "vapmi:upgrade_potions_1"
 }

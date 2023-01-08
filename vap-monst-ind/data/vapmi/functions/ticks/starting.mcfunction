@@ -47,7 +47,7 @@ execute at @e[name="CenterP",type=armor_stand] positioned ~ ~ ~ run spawnpoint @
 execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=White] ~ ~ ~
 
 
-function vapmi:advancements/revoke-all
+execute if entity @e[advancements={vapmi:seed_money}]function vapmi:advancements/revoke-all
 function vapmi:utilities/fresh-scores
 
 # Clear Inventories
