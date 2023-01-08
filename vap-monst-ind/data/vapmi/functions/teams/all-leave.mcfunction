@@ -1,0 +1,1 @@
+team leave @a[distance=0..3]
