@@ -4,7 +4,6 @@
 
 ### v0.0.4
 
-
 ### Setup Instructions
 1. Put vap-monst-ind datapack into your world
 1. Create a similar or identical base for each player
