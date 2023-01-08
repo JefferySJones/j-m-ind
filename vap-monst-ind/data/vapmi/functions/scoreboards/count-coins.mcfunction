@@ -1,1 +1,1 @@
-execute as @a store result score @s Coins run clear @s minecraft:sunflower{id:"Gold Coin"} 0
+execute as @a store result score @s Coins run clear @s minecraft:sunflower{display:{Name:'{"text":"\\u00A76Gold Coin"}'}} 0
