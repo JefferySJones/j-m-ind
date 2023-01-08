@@ -21,8 +21,11 @@ scoreboard players set SIDEBAR_TICKS Constants 200
 scoreboard players set ZERO Constants 0
 
 # Initialize Variables
-#   _CURRENT 0 = Loading | _CURRENT 1 = Starting | _CURRENT 2 = In Game | _CURRENT 3 = Ending
 scoreboard players set _CURRENT GameState 0
+
+# _SIDEBAR 0 = None | 1 = Mob Count | 2 = Stocks
+scoreboard players set _SIDEBAR GameState 0
+scoreboard players set _SIDEBAR_LOCK GameState 0
 
 
 # execute as @a store result score @s <scoreboard> run clear @s <item> 0

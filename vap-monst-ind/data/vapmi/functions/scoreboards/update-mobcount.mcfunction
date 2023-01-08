@@ -18,7 +18,7 @@ execute as @e[type=!player,type=!minecraft:armor_stand,team=Yellow] run scoreboa
 execute as @e[type=!player,type=!minecraft:armor_stand,team=Orange] run scoreboard players add Orange MobCount 1
 execute as @e[type=!player,type=!minecraft:armor_stand,team=Red] run scoreboard players add Red MobCount 1
 
-# Reset Mob Count
+# Reset Mob Count if nobody is on the team
 execute unless entity @a[team=White] run scoreboard players reset White MobCount
 execute unless entity @a[team=Purple] run scoreboard players reset Purple MobCount
 execute unless entity @a[team=Dark_Blue] run scoreboard players reset DarkBlue MobCount
@@ -27,5 +27,3 @@ execute unless entity @a[team=Green] run scoreboard players reset Green MobCount
 execute unless entity @a[team=Yellow] run scoreboard players reset Yellow MobCount
 execute unless entity @a[team=Orange] run scoreboard players reset Orange MobCount
 execute unless entity @a[team=Red] run scoreboard players reset Red MobCount
-
-scoreboard objectives setdisplay sidebar MobCount

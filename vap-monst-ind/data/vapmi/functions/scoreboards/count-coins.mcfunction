@@ -1,0 +1,1 @@
+execute as @a store result score @s Coins run clear @s minecraft:sunflower 0
