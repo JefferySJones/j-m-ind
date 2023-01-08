@@ -1,0 +1,1 @@
+give @p minecraft:splash_potion{"display":{"Name":'[{"text":"Buy Patent for Splash Potions","italic":false,"color":"dark_aqua"}]',"Lore":['[{"text":"Upgrade Potions to Tier II","italic":true,"color":"aqua"}]']}}

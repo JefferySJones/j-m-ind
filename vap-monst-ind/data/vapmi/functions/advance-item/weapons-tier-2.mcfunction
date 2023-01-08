@@ -1,0 +1,1 @@
+give @p minecraft:paper{display:{Name:'[{"text":"Buy Patent for Iron Weapons","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Weapons to Tier II","italic":true,"color":"aqua"}]']}}
