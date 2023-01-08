@@ -23,20 +23,35 @@ execute if entity @p[team=Dark_Blue] run scoreboard players set Dark_Blue Stocks
 execute if entity @p[team=Purple] run scoreboard players set Purple Stocks 1000
 execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
-# TODO: TP Players to Starting Locations
-# tp @a[team=Red] -208.5 30 -192.5
+# TODO: Adjust center rel position
+execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Red] ~ ~ ~
+execute at @e[name="CenterO",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Orange] ~ ~ ~
+execute at @e[name="CenterY",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Yellow] ~ ~ ~
+execute at @e[name="CenterG",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Green] ~ ~ ~
+execute at @e[name="CenterB",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Blue] ~ ~ ~
+execute at @e[name="CenterDB",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Dark_Blue] ~ ~ ~
+execute at @e[name="CenterP",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Purple] ~ ~ ~
+execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run tp @a[team=White] ~ ~ ~
 
-# TODO: Set Spawnpoints
-# spawnpoint @a[team=Red] -209 30 -193
+# TP Spectators
+execute at @e[name="CenterSp",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Spectator] ~ ~ ~
+
+# TODO: Adjust spawnpoint rel position
+execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Red] ~ ~ ~
+execute at @e[name="CenterO",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Orange] ~ ~ ~
+execute at @e[name="CenterY",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Yellow] ~ ~ ~
+execute at @e[name="CenterG",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Green] ~ ~ ~
+execute at @e[name="CenterB",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Blue] ~ ~ ~
+execute at @e[name="CenterDB",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Dark_Blue] ~ ~ ~
+execute at @e[name="CenterP",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=Purple] ~ ~ ~
+execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=White] ~ ~ ~
+
 
 function vapmi:advancements/revoke-all
 function vapmi:utilities/fresh-scores
 
 # Clear Inventories
 clear @a
-
-# TODO: Teleport All Spectators
-# tp @a[team=Spectator] -171 90 -290 90 90
 
 # TODO: Start Countdown Timer
 # TODO: Set Blindness on Everyone
