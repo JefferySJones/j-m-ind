@@ -1,1 +1,0 @@
-scoreboard players set _SEE_ARMOR DEBUG 0
