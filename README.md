@@ -13,7 +13,7 @@
 1. Create a lobby for picking teams [More Details Needed]
 
 ---
-
+L
 ### Future Ideas
 Future Ideas: Show how many players are in each team in the lobby
 Future Ideas: Make dying mobs drop coins
