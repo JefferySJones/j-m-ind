@@ -1,0 +1,1 @@
+give @p minecraft:honey_bottle{"display":{"Name":'[{"text":"Learn To Cook With Honey","italic":false,"color":"dark_aqua"}]',"Lore":['[{"text":"Upgrade Food to Tier II","italic":true,"color":"aqua"}]']}}

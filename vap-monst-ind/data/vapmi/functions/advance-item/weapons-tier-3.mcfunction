@@ -1,0 +1,1 @@
+give @p minecraft:book{display:{Name:'[{"text":"Buy Patent for Diamond Weapons","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Weapons to Tier III","italic":true,"color":"aqua"}]']}}
