@@ -8,6 +8,6 @@ execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR Ga
 # TODO: Add Other Colors
 execute if score @p[team=Red,scores={PlayerDeaths=1..999}] PlayerDeaths matches -99999999..0 run function vapmi:game/kill-player/red
 execute if score Red Stocks matches -99999999..0 run function vapmi:game/destroy-player/red
-
+execute if score Red Stocks matches 1..2147483647 run function vapmi:game/watch-spawn-buttons/red
 
                                       
