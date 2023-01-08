@@ -1,0 +1,1 @@
+execute at @e[type=minecraft:armor_stand] run data modify entity @e[distance=0..2,type=minecraft:armor_stand,limit=1] Marker set value 1b

@@ -1,0 +1,1 @@
+execute at @e[type=minecraft:armor_stand,distance=0..2] run data modify entity @e[distance=0..2,type=minecraft:armor_stand,limit=1] CustomNameVisible set value 0b
