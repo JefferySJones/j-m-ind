@@ -1,3 +1,5 @@
+function vapmi:advancements/revoke-all
+
 # Remove player heads from no-teamers
 clear @a[team=] minecraft:player_head
 clear @a[team=] minecraft:skeleton_skull
