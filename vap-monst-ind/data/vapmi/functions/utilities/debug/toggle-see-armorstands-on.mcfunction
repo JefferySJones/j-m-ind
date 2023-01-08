@@ -1,0 +1,1 @@
+scoreboard players set _SEE_ARMOR DEBUG 1
