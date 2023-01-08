@@ -5,7 +5,7 @@
             "color": "white"
         },
         "description": {
-            "text": "Purchase the \"§7Take a Cooking Class§f\" upgrade",
+            "text": "Purchase the \"§7Take a Cooking Class§r\" upgrade",
             "color": "white"
         },
         "icon": {
@@ -33,5 +33,5 @@
             }
         }
     },
-    "parent": "monster-ind:upgrade_food_1"
+    "parent": "vapmi:upgrade_food_1"
 }

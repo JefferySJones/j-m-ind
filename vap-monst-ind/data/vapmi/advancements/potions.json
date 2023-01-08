@@ -24,6 +24,7 @@
                 "items": [
                     {
                         "item": "minecraft:spider_eye",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Spider Eye\\\"}]\"}}",
                         "count": {
                             "min": 1,
                             "max": 1000000
@@ -33,5 +34,5 @@
             }
         }
     },
-    "parent": "monster-ind:root"
+    "parent": "vapmi:root"
 }

@@ -1,1 +1,1 @@
-clear @a[advancements={monster-ind:upgrade_potions_2=true}] minecraft:lingering_potion{'display':{'Name':'[{"text":"Buy Patent for Lingering Potions","italic":false,"color":"dark_aqua"}]','Lore':['[{"text":"Upgrade Potions to Tier III","italic":true,"color":"aqua"}]']}}
+clear @a[advancements={vapmi:upgrade_potions_2=true}] minecraft:lingering_potion{'display':{'Name':'[{"text":"Buy Patent for Lingering Potions","italic":false,"color":"dark_aqua"}]','Lore':['[{"text":"Upgrade Potions to Tier III","italic":true,"color":"aqua"}]']}}

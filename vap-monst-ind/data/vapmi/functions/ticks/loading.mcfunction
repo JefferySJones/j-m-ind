@@ -1,9 +1,10 @@
-function vapmi:advancements/revoke-all
-
 # Remove player heads from no-teamers
 clear @a[team=] minecraft:player_head
 clear @a[team=] minecraft:skeleton_skull
 clear @a[team=] minecraft:creeper_head
+clear @a minecraft:sunflower{id:"Gold Coin", display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
+
+function vapmi:advancements/revoke-all
 
 # Delete all items around people who are in the 'loading' team
 execute as @a[team=Loading,gamemode=!spectator] run kill @e[type=minecraft:item,distance=0..5]

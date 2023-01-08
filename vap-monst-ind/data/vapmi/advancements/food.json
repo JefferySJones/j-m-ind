@@ -23,6 +23,7 @@
                 "items": [
                     {
                         "item": "minecraft:coal",
+                        "nbt": "{display:{Name:\"[{\\\"text\\\":\\\"Coal\\\"}]\"}}",
                         "count": {
                             "min": 1,
                             "max": 1000000
@@ -32,5 +33,5 @@
             }
         }
     },
-    "parent": "monster-ind:root"
+    "parent": "vapmi:root"
 }

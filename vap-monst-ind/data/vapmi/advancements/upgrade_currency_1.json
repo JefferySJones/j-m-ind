@@ -6,7 +6,7 @@
             "color": "gold"
         },
         "description": {
-            "text": "Purchase the \"§6Invest in Gold Ingots§f\" upgrade",
+            "text": "Purchase the \"§6Invest in Gold Ingots§r\" upgrade",
             "color": "white"
         },
         "icon": {
@@ -34,5 +34,5 @@
             }
         }
     },
-    "parent": "monster-ind:seed_money"
+    "parent": "vapmi:seed_money"
 }

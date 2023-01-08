@@ -1,0 +1,1 @@
+give @p minecraft:spider_eye{display:{Name:'[{"text":"Spider Eye"}]'}}
