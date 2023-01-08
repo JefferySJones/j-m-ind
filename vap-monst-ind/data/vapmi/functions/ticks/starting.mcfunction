@@ -1,4 +1,3 @@
-# All Tick Logic While Game is Starting
 scoreboard objectives setdisplay list Coins
 time set night
 gamemode spectator @a[team=Spectator]
@@ -30,9 +29,8 @@ execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 # TODO: Set Spawnpoints
 # spawnpoint @a[team=Red] -209 30 -193
 
-# Reset Player Deaths
-scoreboard players set @a[scores={PlayerDeaths=1..999}] PlayerDeaths 0
-scoreboard players set @a dmyPlayerDeaths 0
+function vapmi:advancements/revoke-all
+function vapmi:utilities/fresh-scores
 
 # Clear Inventories
 clear @a
