@@ -1,0 +1,2 @@
+# FIXME: The location for "Currency" might not need to be 8 above a polished blackstone :shrug:
+execute at @e[name="Currency",team=Red] if block ~ ~-8 ~ minecraft:polished_blackstone_button[powered=false]
