@@ -21,6 +21,17 @@ team add White "Skeleton"
 team add Spectator "Spectator"
 team add Debug "Debug"
 
+# Add Prefixes for Teams
+team modify Red prefix "[CUBE]"
+team modify Blue prefix "[VEX]"
+team modify Dark_Blue prefix "[PNTM]"
+team modify Green prefix "[CRPR]"
+team modify Yellow prefix "[BLAZ]"
+team modify Orange prefix "[HOG]"
+team modify Purple prefix "[ENDR]"
+team modify White prefix "[SKEL]"
+team modify Spectator prefix "[SPEC]"
+
 # Modify Team Colors
 team modify Blue color blue
 team modify Dark_Blue color dark_blue
