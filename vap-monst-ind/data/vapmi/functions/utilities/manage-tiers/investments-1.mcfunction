@@ -9,14 +9,14 @@ execute if score _INVESTMENTS_TIER VillagerStatePurple matches 0 at @a[team=Purp
 execute if score _INVESTMENTS_TIER VillagerStateWhite matches 0 at @a[team=White] run function vapmi:advancements/remove-item-gold-tier-1
 
 # Summon new villager
-execute if score _INVESTMENTS_TIER VillagerStateRed matches 0 if entity @e[team=Red,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterR"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateOrange matches 0 if entity @e[team=Orange,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterO"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateYellow matches 0 if entity @e[team=Yellow,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterY"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateGreen matches 0 if entity @e[team=Green,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterG"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateBlue matches 0 if entity @e[team=Blue,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterB"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateDarkBlue matches 0 if entity @e[team=Dark_Blue,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterDB"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStatePurple matches 0 if entity @e[team=Purple,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterP"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
-execute if score _INVESTMENTS_TIER VillagerStateWhite matches 0 if entity @e[team=White,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterW"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateRed matches 0 if entity @e[team=Red,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterR"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateOrange matches 0 if entity @e[team=Orange,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterO"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateYellow matches 0 if entity @e[team=Yellow,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterY"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateGreen matches 0 if entity @e[team=Green,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterG"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateBlue matches 0 if entity @e[team=Blue,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterB"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateDarkBlue matches 0 if entity @e[team=Dark_Blue,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterDB"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStatePurple matches 0 if entity @e[team=Purple,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterP"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
+execute if score _INVESTMENTS_TIER VillagerStateWhite matches 0 if entity @e[team=White,advancements={vapmi:seed_money=true}] run execute at @e[name="CenterW"] positioned ~ ~-1 ~ run function vapmi:villagers/summon-new-investments-1
 
 # Upgrade tier if someone gets the advancement
 execute if score _INVESTMENTS_TIER VillagerStateRed matches 0 if entity @e[team=Red,advancements={vapmi:seed_money=true}] run scoreboard players set _INVESTMENTS_TIER VillagerStateRed 1
