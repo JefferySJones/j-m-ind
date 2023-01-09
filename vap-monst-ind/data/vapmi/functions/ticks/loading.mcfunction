@@ -30,32 +30,32 @@ scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
 scoreboard players reset @a[scores={Jump=1..9999999}] Jump
 
 # Red Join Team
-execute at @e[name="TeamPickR"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-red
-execute at @e[name="TeamPickR"] run tp @e[team=Red,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickR"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-red
+execute at @e[name="TeamPickR"] run tp @e[team=Red,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Orange Join Team 
-execute at @e[name="TeamPickO"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-orange
-execute at @e[name="TeamPickO"] run tp @e[team=Orange,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickO"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-orange
+execute at @e[name="TeamPickO"] run tp @e[team=Orange,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Yellow Join Team 
-execute at @e[name="TeamPickY"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-yellow
-execute at @e[name="TeamPickY"] run tp @e[team=Yellow,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickY"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-yellow
+execute at @e[name="TeamPickY"] run tp @e[team=Yellow,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Green Join Team 
-execute at @e[name="TeamPickG"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-green
-execute at @e[name="TeamPickG"] run tp @e[team=Green,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickG"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-green
+execute at @e[name="TeamPickG"] run tp @e[team=Green,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Blue Join Team 
-execute at @e[name="TeamPickB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-blue
-execute at @e[name="TeamPickB"] run tp @e[team=Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-blue
+execute at @e[name="TeamPickB"] run tp @e[team=Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Dark Blue Join Team 
-execute at @e[name="TeamPickDB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-dark_blue
-execute at @e[name="TeamPickDB"] run tp @e[team=Dark_Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickDB"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-dark_blue
+execute at @e[name="TeamPickDB"] run tp @e[team=Dark_Blue,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Purple Join Team 
-execute at @e[name="TeamPickP"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-purple
-execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickP"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-purple
+execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # White Join Team 
-execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-white
-execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-white
+execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Spectator Join Team 
-execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-spectator
-execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-spectator
+execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 
 
 # Give heads of colors
