@@ -32,6 +32,17 @@ team modify Purple prefix "[ENDR]"
 team modify White prefix "[SKEL]"
 team modify Spectator prefix "[SPEC]"
 
+# Make teams unable to see friendly invisibles so they can't see armor stands
+team modify Red seeFriendlyInvisibles false
+team modify Blue seeFriendlyInvisibles false
+team modify Dark_Blue seeFriendlyInvisibles false
+team modify Green seeFriendlyInvisibles false
+team modify Yellow seeFriendlyInvisibles false
+team modify Orange seeFriendlyInvisibles false
+team modify Purple seeFriendlyInvisibles false
+team modify White seeFriendlyInvisibles false
+team modify Spectator seeFriendlyInvisibles false
+
 # Modify Team Colors
 team modify Blue color blue
 team modify Dark_Blue color dark_blue
