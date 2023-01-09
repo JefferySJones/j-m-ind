@@ -23,4 +23,5 @@ execute if score _COUNTDOWN GameState matches 3..10 run effect give @a[team=!Deb
 execute if score _COUNTDOWN GameState matches 3..10 run effect give @a[team=!Debug,team=!Spectator] slowness 2 255 true
 execute if score _COUNTDOWN GameState matches 3..10 run effect give @a[team=!Debug,team=!Spectator] jump_boost 2 150 true
 
+execute if score _COUNTDOWN GameState matches -2 run scoreboard players set _SIDEBAR GameState 1
 execute if score _COUNTDOWN GameState matches -2 run scoreboard players set _CURRENT GameState 3
