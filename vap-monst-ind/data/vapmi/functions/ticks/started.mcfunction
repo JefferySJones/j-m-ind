@@ -29,3 +29,4 @@ function vapmi:game/currency/spawn-white-safe
 function vapmi:utilities/manage-tiers/investments-1
 function vapmi:utilities/manage-tiers/investments-2
 function vapmi:utilities/manage-tiers/investments-3
+function vapmi:utilities/manage-tiers/monsters
