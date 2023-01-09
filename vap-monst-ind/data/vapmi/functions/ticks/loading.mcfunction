@@ -54,8 +54,8 @@ execute at @e[name="TeamPickP"] run tp @e[team=Purple,gamemode=!spectator,sort=n
 execute at @e[name="TeamPickW"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-white
 execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
 # Spectator Join Team 
-execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..3] run function vapmi:teams/join-spectator
-execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..3] @e[name="TeamPicked",limit=1]
+execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-spectator
+execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 
 
 # Give heads of colors
