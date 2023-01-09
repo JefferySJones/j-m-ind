@@ -57,5 +57,8 @@ clear @a
 # Set Title Fade Time
 title @a times 3 12 5
 
+# Kill all villagers
+kill @e[type=villager]
+
 # Change to Starting
 scoreboard players set _CURRENT GameState 2
