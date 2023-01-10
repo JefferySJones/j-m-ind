@@ -30,7 +30,7 @@ function vapmi:utilities/manage-tiers/investments-2
 function vapmi:utilities/manage-tiers/investments-3
 
 function vapmi:utilities/manage-tiers/synergy-2
-function vapmi:utilities/manage-tiers/synergy-2
+function vapmi:utilities/manage-tiers/synergy-3
 
 function vapmi:utilities/manage-tiers/potions-2
 function vapmi:utilities/manage-tiers/potions-3

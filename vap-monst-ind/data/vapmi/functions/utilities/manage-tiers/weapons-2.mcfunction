@@ -9,14 +9,14 @@ execute if score _WEAPONS_TIER VillagerStatePurple matches 1 at @a[team=Purple] 
 execute if score _WEAPONS_TIER VillagerStateWhite matches 1 at @a[team=White] run function vapmi:advancements/remove-item-weapons-tier-2
 
 # Summon new villager
-execute if score _WEAPONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopR"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateOrange matches 1 if entity @e[team=Orange,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopO"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateYellow matches 1 if entity @e[team=Yellow,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopY"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateGreen matches 1 if entity @e[team=Green,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopG"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateBlue matches 1 if entity @e[team=Blue,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopB"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateDarkBlue matches 1 if entity @e[team=Dark_Blue,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopDB"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStatePurple matches 1 if entity @e[team=Purple,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopP"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
-execute if score _WEAPONS_TIER VillagerStateWhite matches 1 if entity @e[team=White,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopW"] positioned ~ ~ ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopR"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateOrange matches 1 if entity @e[team=Orange,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopO"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateYellow matches 1 if entity @e[team=Yellow,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopY"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateGreen matches 1 if entity @e[team=Green,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopG"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateBlue matches 1 if entity @e[team=Blue,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopB"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateDarkBlue matches 1 if entity @e[team=Dark_Blue,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopDB"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStatePurple matches 1 if entity @e[team=Purple,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopP"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
+execute if score _WEAPONS_TIER VillagerStateWhite matches 1 if entity @e[team=White,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopW"] positioned ~2.2 ~-0.5 ~ run function vapmi:villagers/summon-new-weapons-2
 
 # Teleport them facing the right way
 execute if score _WEAPONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_weapons_1=true}] run execute at @e[name="ShopR"] run execute as @e[distance=0..10,type=minecraft:villager] run execute at @s run tp @s ~ ~ ~ facing entity @e[team=Red,limit=1,type=armor_stand,name="CenterR"]
