@@ -39,3 +39,48 @@ scoreboard players set _INVESTMENTS_TIER VillagerStateBlue 0
 scoreboard players set _INVESTMENTS_TIER VillagerStateDarkBlue 0
 scoreboard players set _INVESTMENTS_TIER VillagerStatePurple 0
 scoreboard players set _INVESTMENTS_TIER VillagerStateWhite 0
+
+scoreboard players set _FOOD_TIER VillagerStateRed 1
+scoreboard players set _FOOD_TIER VillagerStateOrange 1
+scoreboard players set _FOOD_TIER VillagerStateYellow 1
+scoreboard players set _FOOD_TIER VillagerStateGreen 1
+scoreboard players set _FOOD_TIER VillagerStateBlue 1
+scoreboard players set _FOOD_TIER VillagerStateDarkBlue 1
+scoreboard players set _FOOD_TIER VillagerStatePurple 1
+scoreboard players set _FOOD_TIER VillagerStateWhite 1
+
+scoreboard players set _POTIONS_TIER VillagerStateRed 1
+scoreboard players set _POTIONS_TIER VillagerStateOrange 1
+scoreboard players set _POTIONS_TIER VillagerStateYellow 1
+scoreboard players set _POTIONS_TIER VillagerStateGreen 1
+scoreboard players set _POTIONS_TIER VillagerStateBlue 1
+scoreboard players set _POTIONS_TIER VillagerStateDarkBlue 1
+scoreboard players set _POTIONS_TIER VillagerStatePurple 1
+scoreboard players set _POTIONS_TIER VillagerStateWhite 1
+
+scoreboard players set _SYNERGY_TIER VillagerStateRed 1
+scoreboard players set _SYNERGY_TIER VillagerStateOrange 1
+scoreboard players set _SYNERGY_TIER VillagerStateYellow 1
+scoreboard players set _SYNERGY_TIER VillagerStateGreen 1
+scoreboard players set _SYNERGY_TIER VillagerStateBlue 1
+scoreboard players set _SYNERGY_TIER VillagerStateDarkBlue 1
+scoreboard players set _SYNERGY_TIER VillagerStatePurple 1
+scoreboard players set _SYNERGY_TIER VillagerStateWhite 1
+
+scoreboard players set _ARMOR_TIER VillagerStateRed 1
+scoreboard players set _ARMOR_TIER VillagerStateOrange 1
+scoreboard players set _ARMOR_TIER VillagerStateYellow 1
+scoreboard players set _ARMOR_TIER VillagerStateGreen 1
+scoreboard players set _ARMOR_TIER VillagerStateBlue 1
+scoreboard players set _ARMOR_TIER VillagerStateDarkBlue 1
+scoreboard players set _ARMOR_TIER VillagerStatePurple 1
+scoreboard players set _ARMOR_TIER VillagerStateWhite 1
+
+scoreboard players set _WEAPONS_TIER VillagerStateRed 1
+scoreboard players set _WEAPONS_TIER VillagerStateOrange 1
+scoreboard players set _WEAPONS_TIER VillagerStateYellow 1
+scoreboard players set _WEAPONS_TIER VillagerStateGreen 1
+scoreboard players set _WEAPONS_TIER VillagerStateBlue 1
+scoreboard players set _WEAPONS_TIER VillagerStateDarkBlue 1
+scoreboard players set _WEAPONS_TIER VillagerStatePurple 1
+scoreboard players set _WEAPONS_TIER VillagerStateWhite 1
