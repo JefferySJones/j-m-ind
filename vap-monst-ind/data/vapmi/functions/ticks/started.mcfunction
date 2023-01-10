@@ -25,7 +25,21 @@ function vapmi:game/currency/spawn-purple-safe
 function vapmi:game/currency/spawn-white-safe
 
 #--- Villagers and Tiers ---#
-# FIXME: Villagers will spawn and kill directly on ~ ~ ~ of Center{Color} currently
 function vapmi:utilities/manage-tiers/investments-1
 function vapmi:utilities/manage-tiers/investments-2
 function vapmi:utilities/manage-tiers/investments-3
+
+function vapmi:utilities/manage-tiers/synergy-2
+function vapmi:utilities/manage-tiers/synergy-2
+
+function vapmi:utilities/manage-tiers/potions-2
+function vapmi:utilities/manage-tiers/potions-3
+
+function vapmi:utilities/manage-tiers/weapons-2
+function vapmi:utilities/manage-tiers/weapons-3
+
+function vapmi:utilities/manage-tiers/armor-2
+function vapmi:utilities/manage-tiers/armor-3
+
+function vapmi:utilities/manage-tiers/food-2
+function vapmi:utilities/manage-tiers/food-3
