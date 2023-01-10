@@ -1,1 +1,1 @@
-clear @p[advancements={vapmi:upgrade_currency_2=true}] minecraft:gold_block{display:{Name:'[{"text":"Invest in Gold Blocks","italic":false,"color":"gold"}]',Lore:['[{"text":"Increase coin production by +1","italic":true,"color":"aqua"}]']}}
+clear @a[advancements={vapmi:upgrade_currency_1=true}] minecraft:gold_ingot{display:{Name:'[{"text":"Invest in Gold Ingots","italic":false,"color":"gold"}]',Lore:['[{"text":"Increase coin production by +1","italic":true,"color":"aqua"}]']}}

@@ -1,1 +1,1 @@
-clear @a[advancements={vapmi:upgrade_armor_2=true}] minecraft:diamond_horse_armor{display:{Name:'[{"text":"Buy Patent for Diamond Armor","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Armorer to Tier III","italic":true,"color":"aqua"}]']}}
+clear @a[advancements={vapmi:upgrade_armor_1=true}] minecraft:iron_horse_armor{display:{Name:'[{"text":"Buy Patent for Iron Armor","italic":false,"color":"dark_aqua"}]',Lore:['[{"text":"Upgrade Armorer to Tier II","italic":true,"color":"aqua"}]']}}
