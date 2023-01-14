@@ -1,4 +1,4 @@
-tellraw @a[team=Orange] [{"text":"Spawner switched to"},{"text":" Magma Cubes!","color":"Red"}]
+tellraw @a[team=Orange] [{"text":"Spawner switched to"},{"text":" Magma Cubes!","color":"red"}]
 
 scoreboard players set _ORANGE_TARGET GameState 1
 
