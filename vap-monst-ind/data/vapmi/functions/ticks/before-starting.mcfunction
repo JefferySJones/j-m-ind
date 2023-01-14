@@ -61,8 +61,9 @@ execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run spawnpoint @
 execute if entity @e[advancements={vapmi:seed_money=true}] run function vapmi:advancements/revoke-all
 function vapmi:utilities/fresh-scores
 
-# Clear Inventories
+# Clear Inventories and Effects
 clear @a
+effect clear @a
 
 # Set Title Fade Time
 title @a times 3 12 5
