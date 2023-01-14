@@ -45,6 +45,13 @@ function vapmi:utilities/manage-tiers/food-2
 function vapmi:utilities/manage-tiers/food-3
 
 function vapmi:game/detect-target-button/red
+function vapmi:game/detect-target-button/orange
+function vapmi:game/detect-target-button/yellow
+function vapmi:game/detect-target-button/green
+function vapmi:game/detect-target-button/blue
+function vapmi:game/detect-target-button/dark_blue
+function vapmi:game/detect-target-button/purple
+function vapmi:game/detect-target-button/white
 
 function vapmi:game/teleport-from/red
 function vapmi:game/teleport-from/orange

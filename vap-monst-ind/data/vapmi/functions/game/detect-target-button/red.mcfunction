@@ -1,3 +1,4 @@
+# Red
 execute at @e[name="CenterR"] positioned ~-16.5 ~1.5 ~3.5 run execute if block ~ ~ ~ minecraft:crimson_button[powered=true] run function vapmi:game/select-target/red/select-red
 execute at @e[name="CenterR"] positioned ~-16.5 ~1.5 ~3.5 run execute if block ~ ~ ~ minecraft:crimson_button[powered=true] run setblock ~ ~ ~ crimson_button[facing=north]
 
