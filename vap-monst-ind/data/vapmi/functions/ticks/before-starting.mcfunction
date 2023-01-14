@@ -25,6 +25,16 @@ execute if entity @p[team=Dark_Blue] run scoreboard players set Dark_Blue Stocks
 execute if entity @p[team=Purple] run scoreboard players set Purple Stocks 1000
 execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
+# Set Spawners to Grey
+function vapmi:game/select-target/red/select-none
+function vapmi:game/select-target/orange/select-none
+function vapmi:game/select-target/yellow/select-none
+function vapmi:game/select-target/green/select-none
+function vapmi:game/select-target/blue/select-none
+function vapmi:game/select-target/dark_blue/select-none
+function vapmi:game/select-target/purple/select-none
+function vapmi:game/select-target/white/select-none
+
 # TODO: Adjust center rel position
 execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Red] ~ ~ ~
 execute at @e[name="CenterO",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Orange] ~ ~ ~
