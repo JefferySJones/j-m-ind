@@ -43,3 +43,5 @@ function vapmi:utilities/manage-tiers/armor-3
 
 function vapmi:utilities/manage-tiers/food-2
 function vapmi:utilities/manage-tiers/food-3
+
+function vapmi:game/teleport-from/red
