@@ -13,6 +13,9 @@ execute if score _RED_TARGET GameState matches 8 run execute unless entity @e[na
 # Red
 # execute if score _RED_TARGET GameState matches 1 run execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Red,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnR",sort=random,limit=1] run tp ~ ~1 ~
 
+# Join the team
+execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..3,team=] run team join Red @s
+
 # Orange
 execute if score _RED_TARGET GameState matches 2 run execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Red,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnO",sort=random,limit=1] run tp ~ ~1 ~
 

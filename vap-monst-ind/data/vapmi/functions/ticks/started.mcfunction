@@ -45,3 +45,10 @@ function vapmi:utilities/manage-tiers/food-2
 function vapmi:utilities/manage-tiers/food-3
 
 function vapmi:game/teleport-from/red
+function vapmi:game/teleport-from/orange
+function vapmi:game/teleport-from/yellow
+function vapmi:game/teleport-from/green
+function vapmi:game/teleport-from/blue
+function vapmi:game/teleport-from/dark_blue
+function vapmi:game/teleport-from/purple
+function vapmi:game/teleport-from/white
