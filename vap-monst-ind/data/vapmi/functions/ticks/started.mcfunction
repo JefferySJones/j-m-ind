@@ -7,6 +7,8 @@ execute if score SIDEBAR_SWITCH Timers matches 0 run function vapmi:scoreboards/
 execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR GameState matches 1 run function vapmi:scoreboards/update-mobcount
 execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR GameState matches 2 run function vapmi:scoreboards/update-stocks
 
+function vapmi:utilities/kill-egg
+
 execute if score Red Stocks matches 1..2147483647 run function vapmi:game/active-player/red
 execute if score Orange Stocks matches 1..2147483647 run function vapmi:game/active-player/orange
 execute if score Yellow Stocks matches 1..2147483647 run function vapmi:game/active-player/yellow

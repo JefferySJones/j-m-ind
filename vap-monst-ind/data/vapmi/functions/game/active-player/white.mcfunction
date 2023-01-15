@@ -4,3 +4,5 @@ execute if score White Stocks matches -99999999..0 run function vapmi:game/destr
 function vapmi:game/detect-target-button/white
 function vapmi:game/teleport-from/white
 function vapmi:game/currency/spawn-white-safe
+
+execute at @e[name="ChickenSpawnW",limit=1] run execute as @e[type=item,distance=10] run tp @p[distance=0..20]

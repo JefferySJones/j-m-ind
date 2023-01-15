@@ -13,3 +13,5 @@ function vapmi:utilities/summon/chicken/blue
 function vapmi:utilities/summon/chicken/dark_blue
 function vapmi:utilities/summon/chicken/purple
 function vapmi:utilities/summon/chicken/white
+
+execute at @e[name="ChickenSpawnR",limit=1] run execute as @e[type=item,distance=10] run tp @p[distance=0..20]

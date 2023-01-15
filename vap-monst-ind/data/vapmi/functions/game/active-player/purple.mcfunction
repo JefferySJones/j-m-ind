@@ -4,3 +4,5 @@ execute if score Purple Stocks matches -99999999..0 run function vapmi:game/dest
 function vapmi:game/detect-target-button/purple
 function vapmi:game/teleport-from/purple
 function vapmi:game/currency/spawn-purple-safe
+
+execute at @e[name="ChickenSpawnP",limit=1] run execute as @e[type=item,distance=10] run tp @p[distance=0..20]
