@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 0.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'[{\"text\":\"Coal\"}]'}}"
+            }
+          ],
+          "name": "minecraft:coal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
