@@ -14,4 +14,4 @@ function vapmi:utilities/summon/chicken/dark_blue
 function vapmi:utilities/summon/chicken/purple
 function vapmi:utilities/summon/chicken/white
 
-execute at @e[name="ChickenSpawnR",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
+execute if score _EVERY_SECOND Timers matches 0 run execute at @e[name="ChickenSpawnR",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]

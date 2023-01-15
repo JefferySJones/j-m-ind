@@ -5,4 +5,4 @@ function vapmi:game/detect-target-button/orange
 function vapmi:game/teleport-from/orange
 function vapmi:game/currency/spawn-orange-safe
 
-execute at @e[name="ChickenSpawnO",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
+execute if score _EVERY_SECOND Timers matches 0 run execute at @e[name="ChickenSpawnO",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]

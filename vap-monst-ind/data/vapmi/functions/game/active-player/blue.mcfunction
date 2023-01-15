@@ -5,4 +5,4 @@ function vapmi:game/detect-target-button/blue
 function vapmi:game/teleport-from/blue
 function vapmi:game/currency/spawn-blue-safe
 
-execute at @e[name="ChickenSpawnB",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
+execute if score _EVERY_SECOND Timers matches 0 run execute at @e[name="ChickenSpawnB",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
