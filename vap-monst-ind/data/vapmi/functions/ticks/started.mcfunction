@@ -14,6 +14,8 @@ execute if score Red Stocks matches 1..2147483647 run function vapmi:game/watch-
 
 execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:villagers/initialize-villagers
 
+function vapmi:utilities/xp-scrub
+
 # Spawn Coins
 function vapmi:game/currency/spawn-red-safe
 function vapmi:game/currency/spawn-orange-safe
