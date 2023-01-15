@@ -5,4 +5,4 @@ function vapmi:game/detect-target-button/dark_blue
 function vapmi:game/teleport-from/dark_blue
 function vapmi:game/currency/spawn-dark_blue-safe
 
-execute at @e[name="ChickenSpawnDB",limit=1] run execute as @e[type=item,distance=10] run tp @p[distance=0..20]
+execute at @e[name="ChickenSpawnDB",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]

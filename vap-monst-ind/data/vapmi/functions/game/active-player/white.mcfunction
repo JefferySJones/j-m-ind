@@ -5,4 +5,4 @@ function vapmi:game/detect-target-button/white
 function vapmi:game/teleport-from/white
 function vapmi:game/currency/spawn-white-safe
 
-execute at @e[name="ChickenSpawnW",limit=1] run execute as @e[type=item,distance=10] run tp @p[distance=0..20]
+execute at @e[name="ChickenSpawnW",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
