@@ -20,6 +20,7 @@ team add Purple "Enderman"
 team add White "Skeleton"
 team add Spectator "Spectator"
 team add Debug "Debug"
+team add NoCollision
 
 # Add Prefixes for Teams
 team modify Red prefix "[CUBE]"
@@ -42,6 +43,8 @@ team modify Orange seeFriendlyInvisibles false
 team modify Purple seeFriendlyInvisibles false
 team modify White seeFriendlyInvisibles false
 team modify Spectator seeFriendlyInvisibles false
+
+team modify NoCollision collisionRule never
 
 # Modify Team Colors
 team modify Blue color blue
