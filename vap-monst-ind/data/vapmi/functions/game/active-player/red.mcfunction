@@ -4,3 +4,12 @@ execute if score Red Stocks matches -99999999..0 run function vapmi:game/destroy
 function vapmi:game/detect-target-button/red
 function vapmi:game/teleport-from/red
 function vapmi:game/currency/spawn-red-safe
+
+function vapmi:utilities/summon/chicken/red
+function vapmi:utilities/summon/chicken/orange
+function vapmi:utilities/summon/chicken/yellow
+function vapmi:utilities/summon/chicken/green
+function vapmi:utilities/summon/chicken/blue
+function vapmi:utilities/summon/chicken/dark_blue
+function vapmi:utilities/summon/chicken/purple
+function vapmi:utilities/summon/chicken/white
