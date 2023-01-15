@@ -8,6 +8,7 @@ gamerule doInsomnia false
 gamerule doWeatherCycle false 
 gamerule disableRaids true
 gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
 gamerule mobGriefing false
 gamerule keepInventory true
 gamerule universalAnger true
