@@ -5,6 +5,6 @@ scoreboard players reset Red Stocks
 
 # re-calculate spawners
 # TODO: Instead of re-setting up all the spawners, just set a dead sign on the location of all of the red buttons.
-function vapmi:utilities/setup-spawner
+
 
 # TODO: function start end-game?

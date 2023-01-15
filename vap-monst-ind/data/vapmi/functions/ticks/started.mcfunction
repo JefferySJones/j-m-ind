@@ -7,24 +7,18 @@ execute if score SIDEBAR_SWITCH Timers matches 0 run function vapmi:scoreboards/
 execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR GameState matches 1 run function vapmi:scoreboards/update-mobcount
 execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR GameState matches 2 run function vapmi:scoreboards/update-stocks
 
-# TODO: Add Other Colors
-execute if score @p[team=Red,scores={PlayerDeaths=1..999}] PlayerDeaths matches -99999999..0 run function vapmi:game/kill-player/red
-execute if score Red Stocks matches -99999999..0 run function vapmi:game/destroy-player/red
-execute if score Red Stocks matches 1..2147483647 run function vapmi:game/watch-spawn-buttons/red
+execute if score Red Stocks matches 1..2147483647 run function vapmi:game/active-player/red
+execute if score Orange Stocks matches 1..2147483647 run function vapmi:game/active-player/orange
+execute if score Yellow Stocks matches 1..2147483647 run function vapmi:game/active-player/yellow
+execute if score Green Stocks matches 1..2147483647 run function vapmi:game/active-player/green
+execute if score Blue Stocks matches 1..2147483647 run function vapmi:game/active-player/blue
+execute if score Dark_Blue Stocks matches 1..2147483647 run function vapmi:game/active-player/dark_blue
+execute if score Purple Stocks matches 1..2147483647 run function vapmi:game/active-player/purple
+execute if score White Stocks matches 1..2147483647 run function vapmi:game/active-player/white
 
 execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:villagers/initialize-villagers
 
-function vapmi:utilities/xp-scrub
-
-# Spawn Coins
-function vapmi:game/currency/spawn-red-safe
-function vapmi:game/currency/spawn-orange-safe
-function vapmi:game/currency/spawn-yellow-safe
-function vapmi:game/currency/spawn-green-safe
-function vapmi:game/currency/spawn-blue-safe
-function vapmi:game/currency/spawn-dark_blue-safe
-function vapmi:game/currency/spawn-purple-safe
-function vapmi:game/currency/spawn-white-safe
+execute if entity @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{display:{Name:'[{"text":"XP Scrubber"}]'}}}}] run function vapmi:utilities/xp-scrub
 
 #--- Villagers and Tiers ---#
 function vapmi:utilities/manage-tiers/investments-1
@@ -46,20 +40,3 @@ function vapmi:utilities/manage-tiers/armor-3
 function vapmi:utilities/manage-tiers/food-2
 function vapmi:utilities/manage-tiers/food-3
 
-function vapmi:game/detect-target-button/red
-function vapmi:game/detect-target-button/orange
-function vapmi:game/detect-target-button/yellow
-function vapmi:game/detect-target-button/green
-function vapmi:game/detect-target-button/blue
-function vapmi:game/detect-target-button/dark_blue
-function vapmi:game/detect-target-button/purple
-function vapmi:game/detect-target-button/white
-
-function vapmi:game/teleport-from/red
-function vapmi:game/teleport-from/orange
-function vapmi:game/teleport-from/yellow
-function vapmi:game/teleport-from/green
-function vapmi:game/teleport-from/blue
-function vapmi:game/teleport-from/dark_blue
-function vapmi:game/teleport-from/purple
-function vapmi:game/teleport-from/white

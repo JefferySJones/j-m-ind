@@ -10,15 +10,16 @@ execute unless entity @e[name="CenterDB",limit=1,type=minecraft:armor_stand] run
 execute unless entity @e[name="CenterP",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterP", "color": "gray", "bold": false}]
 execute unless entity @e[name="CenterW",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"setup-spawner: Unable to find armor_stand named CenterW", "color": "gray", "bold": false}]
 
-# TODO: Update Maths for locations of spawners
-execute at @e[name="CenterR",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterO",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterY",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterG",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterB",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterDB",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterP",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
-execute at @e[name="CenterW",limit=1,type=minecraft:armor_stand] run clone 1 23 19 9 27 14 ~ ~ ~
+function vapmi:game/select-target/red/select-none
+function vapmi:game/select-target/orange/select-none
+function vapmi:game/select-target/yellow/select-none
+function vapmi:game/select-target/green/select-none
+function vapmi:game/select-target/blue/select-none
+function vapmi:game/select-target/dark_blue/select-none
+function vapmi:game/select-target/purple/select-none
+function vapmi:game/select-target/white/select-none
+
+
 
 # Set buttons if their team has players
 # execute if entity @a[team=Red] run setblock ~ 28 ~3 minecraft:crimson_button[facing=south]

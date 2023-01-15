@@ -4,6 +4,7 @@ scoreboard objectives setdisplay list Coins
 time set night
 gamemode spectator @a[team=Spectator]
 gamemode adventure @a[team=!Spectator]
+function vapmi:utilities/fresh-scores
 
 # Join "Fake Players" to the Team
 execute if entity @p[team=Red] run team join Red Red
@@ -25,15 +26,7 @@ execute if entity @p[team=Dark_Blue] run scoreboard players set Dark_Blue Stocks
 execute if entity @p[team=Purple] run scoreboard players set Purple Stocks 1000
 execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
-# Set Spawners to Grey
-function vapmi:game/select-target/red/select-none
-function vapmi:game/select-target/orange/select-none
-function vapmi:game/select-target/yellow/select-none
-function vapmi:game/select-target/green/select-none
-function vapmi:game/select-target/blue/select-none
-function vapmi:game/select-target/dark_blue/select-none
-function vapmi:game/select-target/purple/select-none
-function vapmi:game/select-target/white/select-none
+function vapmi:utilities/setup-spawner
 
 # TODO: Adjust center rel position
 execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Red] ~ ~ ~
@@ -59,7 +52,6 @@ execute at @e[name="CenterP",type=armor_stand] positioned ~ ~ ~ run spawnpoint @
 execute at @e[name="CenterW",type=armor_stand] positioned ~ ~ ~ run spawnpoint @a[team=White] ~ ~ ~
 
 execute if entity @e[advancements={vapmi:seed_money=true}] run function vapmi:advancements/revoke-all
-function vapmi:utilities/fresh-scores
 
 # Clear Inventories and Effects
 clear @a
