@@ -7,7 +7,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:barrier",
+            "name": "minecraft:stone_button",
             "functions": [
               {
                 "function": "minecraft:set_nbt",
