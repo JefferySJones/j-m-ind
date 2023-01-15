@@ -19,8 +19,6 @@ function vapmi:game/select-target/dark_blue/select-none
 function vapmi:game/select-target/purple/select-none
 function vapmi:game/select-target/white/select-none
 
-
-
 # Set buttons if their team has players
 # execute if entity @a[team=Red] run setblock ~ 28 ~3 minecraft:crimson_button[facing=south]
 # execute if entity @a[team=Orange] run setblock ~ 28 ~3 minecraft:crimson_button[facing=south]

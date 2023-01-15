@@ -1,0 +1,2 @@
+execute at @e[name="ChickenSpawnR",limit=1] run execute unless entity @e[distance=0..16,name="ChickenR"] run execute as @e[name="ChickenSpawnR",sort=random,limit=1] run execute at @s run summon chicken ~ ~ ~ {CustomName:'"ChickenR"',Health:0.5f,CustomNameVisible:false,Silent:true,DeathTime:19,DeathLootTable:"vapmi:entities/chicken",Attributes:[{Name:"generic.max_health", Base: 1}]}
+execute at @e[name="ChickenSpawnR",sort=random,limit=1] run execute if entity @e[distance=7..11,name="ChickenR"] run tp @e[name="ChickenR"] @e[name="ChickenSpawnR",sort=random,limit=1]

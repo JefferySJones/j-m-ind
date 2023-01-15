@@ -5,13 +5,9 @@ function vapmi:game/detect-target-button/red
 function vapmi:game/teleport-from/red
 function vapmi:game/currency/spawn-red-safe
 
-function vapmi:utilities/summon/chicken/red
-function vapmi:utilities/summon/chicken/orange
-function vapmi:utilities/summon/chicken/yellow
-function vapmi:utilities/summon/chicken/green
-function vapmi:utilities/summon/chicken/blue
-function vapmi:utilities/summon/chicken/dark_blue
-function vapmi:utilities/summon/chicken/purple
-function vapmi:utilities/summon/chicken/white
+function vapmi:game/chicken/red
+
+execute at @e[name="CenterR"] if score _RED_PARKOUR_LOCK GameState matches 1 run execute if block ~21.5 ~7 ~-18.5 stone_pressure_plate[powered=false] run scoreboard players set _RED_PARKOUR_LOCK GameState 0
+execute at @e[name="CenterR"] unless score _RED_PARKOUR_LOCK GameState matches 1 run execute if block ~21.5 ~7 ~-18.5 stone_pressure_plate[powered=true] run function vapmi:game/parkour/setup/red
 
 execute if score _EVERY_SECOND Timers matches 0 run execute at @e[name="ChickenSpawnR",limit=1] run execute as @e[type=item,distance=0..10] run tp @p[distance=0..20]
