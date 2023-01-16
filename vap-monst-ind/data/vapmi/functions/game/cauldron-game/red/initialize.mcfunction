@@ -24,6 +24,9 @@ scoreboard players operation _RED_RANDOM_3 test += 1 test
 # Set current check to 1
 scoreboard players set _RED_CURRENT test 1
 execute at @e[name="CauldronR"] run setblock ~ ~-1 ~ minecraft:water_cauldron[level=1]
+execute at @e[name="CauldronR"] run setblock ~1 ~2 ~1 gray_wool
+execute at @e[name="CauldronR"] run setblock ~ ~2 ~1 gray_wool
+execute at @e[name="CauldronR"] run setblock ~-1 ~2 ~1 gray_wool
 
 execute if score _RED_RANDOM_1 test matches 1 run execute at @e[name="CauldronR"] positioned ~1 ~2 ~ run data modify entity @e[distance=0..1,limit=1,sort=nearest] Item.id set value "minecraft:red_dye" 
 execute if score _RED_RANDOM_1 test matches 2 run execute at @e[name="CauldronR"] positioned ~1 ~2 ~ run data modify entity @e[distance=0..1,limit=1,sort=nearest] Item.id set value "minecraft:blue_dye" 

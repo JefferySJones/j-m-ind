@@ -1,4 +1,7 @@
 execute at @e[name="CauldronR"] run setblock ~ ~-1 ~ minecraft:water_cauldron[level=3]
+execute at @e[name="CauldronR"] run setblock ~1 ~2 ~1 lime_wool
+execute at @e[name="CauldronR"] run setblock ~ ~2 ~1 lime_wool
+execute at @e[name="CauldronR"] run setblock ~-1 ~2 ~1 blue_wool
 
 # Red 
 execute at @e[name="CauldronR"] run execute if entity @e[type=minecraft:item_frame,distance=0..2,nbt={Item:{id:"minecraft:red_dye"},ItemRotation:1b}] run execute if score _RED_RANDOM_3 test matches 1 run scoreboard players set _RED_CURRENT test 4
