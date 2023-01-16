@@ -8,7 +8,7 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:["random_uuid"]}
 execute store result score _RED_RANDOM_3 test run data get entity @e[type=minecraft:armor_stand,tag=random_uuid,limit=1] UUID[0] 1
 kill @e[tag=random_uuid,type=armor_stand]
 
-scoreboard players set 6 test 6
+scoreboard players set 5 test 5
 scoreboard players set 1 test 1
 
 # Modulus 5 + 1
