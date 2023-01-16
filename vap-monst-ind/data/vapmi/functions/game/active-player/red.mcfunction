@@ -6,7 +6,9 @@ function vapmi:game/teleport-from/red
 function vapmi:game/currency/spawn-red-safe
 
 function vapmi:game/chicken/red
+function vapmi:game/cauldron-game/red/game-tick
 
+# Parkour
 execute at @e[name="CenterR"] if score _RED_PARKOUR_LOCK GameState matches 1 run execute if block ~21.5 ~7 ~-18.5 stone_pressure_plate[powered=false] run scoreboard players set _RED_PARKOUR_LOCK GameState 0
 execute at @e[name="CenterR"] unless score _RED_PARKOUR_LOCK GameState matches 1 run execute if block ~21.5 ~7 ~-18.5 stone_pressure_plate[powered=true] run function vapmi:game/parkour/setup/red
 
