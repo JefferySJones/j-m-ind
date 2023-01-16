@@ -23,7 +23,6 @@ scoreboard players operation _RED_RANDOM_3 test += 1 test
 
 # Set current check to 1
 scoreboard players set _RED_CURRENT test 1
-scoreboard players set _RED_METER test 0
 execute at @e[name="CauldronR"] run setblock ~ ~-1 ~ minecraft:water_cauldron[level=1]
 execute at @e[name="CauldronR"] run setblock ~1 ~2 ~1 gray_wool
 execute at @e[name="CauldronR"] run setblock ~ ~2 ~1 gray_wool
