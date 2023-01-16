@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Marker:true,Invisible:true,Invulnerable:true,NoGravity:true,Small:true,CustomName:'{"text":"CauldronR","color":"red"}'}
