@@ -1,0 +1,1 @@
+summon creeper ~ ~ ~ {NoAI:true,Fuse:999999,powered:true,CustomName:'"FireworkCreeper"'}
