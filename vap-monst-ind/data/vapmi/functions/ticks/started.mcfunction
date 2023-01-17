@@ -33,8 +33,6 @@ execute if score _EVERY_SECOND Timers matches 8 run function vapmi:game/firework
 execute if score _EVERY_SECOND Timers matches 12 run function vapmi:game/firework-creeper/degrade-tag-and-tp
 execute if score _EVERY_SECOND Timers matches 16 run function vapmi:game/firework-creeper/degrade-tag-and-tp
 
-execute if score _EVERY_FIVE_SECONDS Timers matches 0 run function vapmi:game/firework-creeper/move-creepers
-
 #--- Villagers and Tiers ---#
 function vapmi:utilities/manage-tiers/investments-1
 function vapmi:utilities/manage-tiers/investments-2

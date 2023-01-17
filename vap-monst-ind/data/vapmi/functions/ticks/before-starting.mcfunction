@@ -74,3 +74,6 @@ kill @e[type=villager]
 
 # Change to Starting
 scoreboard players set _CURRENT GameState 2
+
+# Move all the creepers real quick
+function vapmi:game/firework-creeper/move-creeper/red
