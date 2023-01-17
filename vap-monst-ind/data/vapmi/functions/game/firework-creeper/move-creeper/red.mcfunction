@@ -1,5 +1,3 @@
-function vapmi:game/firework-creeper/move-creeper/red
-
 # Randomly Move Creeper
 execute at @e[name="CreeperMarker",team=Red] run spreadplayers ~ ~ 1 1 false @e[name="FireworkCreeper",distance=0..3]
 execute as @e[name="FireworkCreeper",team=Red] run execute at @s run tp ~ ~-1 ~
