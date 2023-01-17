@@ -1,0 +1,1 @@
+execute at @e[name="JumpClearW"] run fill ~ ~ ~ ~-5 ~-4 ~-5 air
