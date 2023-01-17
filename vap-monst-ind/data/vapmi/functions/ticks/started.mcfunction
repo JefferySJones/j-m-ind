@@ -24,7 +24,7 @@ execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:v
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{display:{Name:'[{"text":"XP Scrubber"}]'}}}}] run function vapmi:utilities/xp-scrub
 
 # Alt Currency
-execute if score _EVERY_TWO_SECONDS Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
 
 #--- Villagers and Tiers ---#
 function vapmi:utilities/manage-tiers/investments-1
