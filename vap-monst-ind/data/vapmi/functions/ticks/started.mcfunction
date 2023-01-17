@@ -26,6 +26,13 @@ execute if entity @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{displ
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
 
+# Run firework creeper tp every 4 ticks
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/firework-creeper/degrade-tag-and-tp
+execute if score _EVERY_SECOND Timers matches 4 run function vapmi:game/firework-creeper/degrade-tag-and-tp
+execute if score _EVERY_SECOND Timers matches 8 run function vapmi:game/firework-creeper/degrade-tag-and-tp
+execute if score _EVERY_SECOND Timers matches 12 run function vapmi:game/firework-creeper/degrade-tag-and-tp
+execute if score _EVERY_SECOND Timers matches 16 run function vapmi:game/firework-creeper/degrade-tag-and-tp
+
 #--- Villagers and Tiers ---#
 function vapmi:utilities/manage-tiers/investments-1
 function vapmi:utilities/manage-tiers/investments-2
