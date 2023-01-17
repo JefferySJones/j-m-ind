@@ -4,7 +4,7 @@ execute if score _EVERY_SECOND Timers matches 20..999 run scoreboard players set
 
 # _EVERY_TWO_SECONDS (Every 40 Ticks)
 scoreboard players add _EVERY_TWO_SECONDS Timers 1
-execute if score _EVERY_TWO_SECONDS Timers matches 40..999 run scoreboard players set _EVERY_TEN_SECONDS Timers 0
+execute if score _EVERY_TWO_SECONDS Timers matches 40..999 run scoreboard players set _EVERY_TWO_SECONDS Timers 0
 
 # _EVERY_TEN_SECONDS (Every 200 Ticks)
 scoreboard players add _EVERY_TEN_SECONDS Timers 1
