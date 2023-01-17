@@ -11,5 +11,6 @@ execute if score _RED_PLAYER FireworkCreeper matches 1..4 run execute at @e[name
 execute at @a[tag=Creeper_1] run execute at @e[distance=0..10,name="CreeperMarker"] run tp @a[tag=Creeper_1,distance=0..10] ~7.5 ~ ~
 tag @a[tag=Creeper_1] remove Creeper_1
 
+execute if score _RED_PLAYER FireworkCreeper matches 1..4 run function vapmi:game/firework-creeper/move-creeper/red
 # Reset player score!
 execute if score _RED_PLAYER FireworkCreeper matches 1..4 run scoreboard players set _RED_PLAYER FireworkCreeper 0
