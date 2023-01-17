@@ -10,6 +10,7 @@ execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:
 
 function vapmi:game/chicken/red
 function vapmi:game/cauldron-game/red/game-tick
+function vapmi:game/firework-creeper/check-creeper/red
 function vapmi:utilities/summon/all-coal-zombies-timer
 
 # Parkour
