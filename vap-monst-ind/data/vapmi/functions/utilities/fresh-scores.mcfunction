@@ -87,3 +87,6 @@ scoreboard players set _WEAPONS_TIER VillagerStateWhite 1
 
 scoreboard players set _RED_CURRENT cauldron 0
 scoreboard players set _RED_METER cauldron 0
+
+scoreboard players set _RED_FWCREEP FireworkCreeper 0
+scoreboard players set _RED_PLAYER FireworkCreeper 0
