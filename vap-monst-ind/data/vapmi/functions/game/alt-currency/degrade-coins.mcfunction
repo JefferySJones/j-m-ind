@@ -12,6 +12,7 @@ tag @e[tag=Coin_2] remove Coin_3
 tag @e[tag=Coin_1] remove Coin_2
 tag @e[tag=Coin_0] remove Coin_1
 
+function vapmi:game/alt-currency/particle-trail-0
 function vapmi:game/alt-currency/particle-trail-1
 function vapmi:game/alt-currency/particle-trail-2
 function vapmi:game/alt-currency/particle-trail-3
