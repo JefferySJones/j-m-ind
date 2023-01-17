@@ -1,0 +1,1 @@
+execute at @e[tag=AltCoinSpawnR] positioned ~ ~-16 ~ run function vapmi:game/currency/spawn-coins-red
