@@ -14,6 +14,21 @@
 
 ---
 
+### Whats Left?
+- [ ] Copy alternate coin generation from Red only to other colors
+- [ ] Copy the cauldron game to other colors
+- [ ] Copy parkour game into other colors
+- [ ] Rename cauldron scoreboard from "test" to "cauldron"
+- [ ] Make Blaze powder give 2 powder instead of 1
+- [ ] Make shop sell netherite scraps
+- [ ] Make fireworks earnable
+
+In map:
+- [ ] Spawn chicken markers
+- [ ] Spawn Parkour markers
+- [ ] Spawn Cauldron markers
+- [ ] Spawn Coin markers / tag them
+
 ### Future Ideas
 Future Ideas: Show how many players are in each team in the lobby
 Future Ideas: Make dying mobs drop coins
