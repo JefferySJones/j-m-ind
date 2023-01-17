@@ -12,4 +12,4 @@ clear @a[team=Red,scores={PlayerDeaths=1..999}] minecraft:sunflower{display:{Nam
 
 # Set actual player deaths back to 0, and track in dummy player deaths
 scoreboard players add Red dmyPlayerDeaths 1
-scoreboard players set @a[team=Red,scores={PlayerDeaths=1..999}] PlayerDeaths 0
+scoreboard players remove @a[team=Red,scores={PlayerDeaths=1..999}] PlayerDeaths 1
