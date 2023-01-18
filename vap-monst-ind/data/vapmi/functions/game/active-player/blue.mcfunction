@@ -3,7 +3,7 @@ execute if score Blue Stocks matches -99999999..0 run function vapmi:game/destro
 
 function vapmi:game/detect-target-button/blue
 function vapmi:game/teleport-from/blue
-function vapmi:game/currency/spawn-blue-safe
+# function vapmi:game/currency/spawn-blue-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/blue/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/blue/spread-and-spawn

@@ -3,7 +3,7 @@ execute if score Red Stocks matches -99999999..0 run function vapmi:game/destroy
 
 function vapmi:game/detect-target-button/red
 function vapmi:game/teleport-from/red
-function vapmi:game/currency/spawn-red-safe
+# function vapmi:game/currency/spawn-red-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/red/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/red/spread-and-spawn

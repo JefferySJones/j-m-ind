@@ -3,7 +3,7 @@ execute if score Purple Stocks matches -99999999..0 run function vapmi:game/dest
 
 function vapmi:game/detect-target-button/purple
 function vapmi:game/teleport-from/purple
-function vapmi:game/currency/spawn-purple-safe
+# function vapmi:game/currency/spawn-purple-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/purple/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/purple/spread-and-spawn

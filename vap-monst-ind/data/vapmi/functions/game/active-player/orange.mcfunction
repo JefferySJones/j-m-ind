@@ -3,7 +3,7 @@ execute if score Orange Stocks matches -99999999..0 run function vapmi:game/dest
 
 function vapmi:game/detect-target-button/orange
 function vapmi:game/teleport-from/orange
-function vapmi:game/currency/spawn-orange-safe
+# function vapmi:game/currency/spawn-orange-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/orange/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/orange/spread-and-spawn

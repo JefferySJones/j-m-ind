@@ -3,7 +3,7 @@ execute if score Green Stocks matches -99999999..0 run function vapmi:game/destr
 
 function vapmi:game/detect-target-button/green
 function vapmi:game/teleport-from/green
-function vapmi:game/currency/spawn-green-safe
+# function vapmi:game/currency/spawn-green-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/green/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/green/spread-and-spawn

@@ -3,7 +3,7 @@ execute if score White Stocks matches -99999999..0 run function vapmi:game/destr
 
 function vapmi:game/detect-target-button/white
 function vapmi:game/teleport-from/white
-function vapmi:game/currency/spawn-white-safe
+# function vapmi:game/currency/spawn-white-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/white/spread-and-spawn
 execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:game/alt-currency/white/spread-and-spawn
