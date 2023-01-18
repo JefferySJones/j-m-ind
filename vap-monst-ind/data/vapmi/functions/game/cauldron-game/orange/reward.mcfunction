@@ -4,4 +4,4 @@ execute at @e[name="CauldronO"] run particle minecraft:flash ~ ~1 ~1 0 0 0 0.02 
 execute at @e[name="CauldronO"] run summon item ~ ~ ~ {Item:{id:"blaze_powder",Count:2}}
 execute at @e[name="CauldronO"] run playsound minecraft:block.brewing_stand.brew hostile @a
 
-scoreboard players set _ORANGE_METER cauldron 0
+scoreboard players set _ORANGE_METER Cauldron 0

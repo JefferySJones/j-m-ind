@@ -6,7 +6,7 @@ scoreboard objectives add Constants dummy "Constants"
 scoreboard objectives add GameState dummy "Game State"
 scoreboard objectives add Coins dummy "Coins"
 scoreboard objectives add DEBUG dummy
-scoreboard objectives add cauldron dummy
+scoreboard objectives add Cauldron dummy
 scoreboard objectives add FireworkCreeper dummy
 
 # Villager State
