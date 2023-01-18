@@ -88,7 +88,32 @@ scoreboard players set _WEAPONS_TIER VillagerStateWhite 1
 # Cauldron
 scoreboard players set _RED_CURRENT Cauldron 0
 scoreboard players set _RED_METER Cauldron 0
+scoreboard players set _YELLOW_CURRENT Cauldron 0
+scoreboard players set _YELLOW_METER Cauldron 0
+scoreboard players set _GREEN_CURRENT Cauldron 0
+scoreboard players set _GREEN_METER Cauldron 0
+scoreboard players set _BLUE_CURRENT Cauldron 0
+scoreboard players set _BLUE_METER Cauldron 0
+scoreboard players set _DARK_BLUE_CURRENT Cauldron 0
+scoreboard players set _DARK_BLUE_METER Cauldron 0
+scoreboard players set _PURPLE_CURRENT Cauldron 0
+scoreboard players set _PURPLE_METER Cauldron 0
+scoreboard players set _WHITE_CURRENT Cauldron 0
+scoreboard players set _WHITE_METER Cauldron 0
 
 # Creeper
 scoreboard players set _RED_FWCREEP FireworkCreeper 0
 scoreboard players set _RED_PLAYER FireworkCreeper 0
+scoreboard players set _YELLOW_FWCREEP FireworkCreeper 0
+scoreboard players set _YELLOW_PLAYER FireworkCreeper 0
+scoreboard players set _GREEN_FWCREEP FireworkCreeper 0
+scoreboard players set _GREEN_PLAYER FireworkCreeper 0
+scoreboard players set _BLUE_FWCREEP FireworkCreeper 0
+scoreboard players set _BLUE_PLAYER FireworkCreeper 0
+scoreboard players set _DARK_BLUE_FWCREEP FireworkCreeper 0
+scoreboard players set _DARK_BLUE_PLAYER FireworkCreeper 0
+scoreboard players set _PURPLE_FWCREEP FireworkCreeper 0
+scoreboard players set _PURPLE_PLAYER FireworkCreeper 0
+scoreboard players set _WHITE_FWCREEP FireworkCreeper 0
+scoreboard players set _WHITE_PLAYER FireworkCreeper 0
+
