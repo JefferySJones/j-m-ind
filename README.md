@@ -15,13 +15,15 @@
 ---
 
 ### Whats Left?
-- [ ] Copy alternate coin generation from Red only to other colors
-- [ ] Copy the cauldron game to other colors
-Ledge - [ ] Copy parkour game into other colors
+- [x] Copy alternate coin generation from Red only to other colors
+- [x] Copy the cauldron game to other colors
+- [x] Copy parkour game into other colors
 - [x] Rename cauldron scoreboard from "test" to "cauldron"
 - [x] Make Blaze powder give 2 powder instead of 1
 - [x] Make shop sell netherite scraps
-- [ ] Make fireworks earnable
+- [x] Make fireworks earnable
+- [x] Fix deaths for red
+- [ ] Fix deaths for other colors 
 
 In map:
 - [ ] Spawn chicken markers

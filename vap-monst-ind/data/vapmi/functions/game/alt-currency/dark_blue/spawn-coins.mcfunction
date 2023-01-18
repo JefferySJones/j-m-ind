@@ -1,0 +1,1 @@
+execute at @e[tag=AltCoinSpawnDB] positioned ~ 0.5 ~ run function vapmi:game/currency/spawn-coins-dark_blue

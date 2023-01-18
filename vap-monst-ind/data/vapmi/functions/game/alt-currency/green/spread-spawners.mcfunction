@@ -1,0 +1,1 @@
+execute at @e[name="CenterG"] run spreadplayers ~ ~ 12 12 false @e[tag=AltCoinSpawnG]

@@ -1,0 +1,1 @@
+execute at @e[name="CenterDB"] run spreadplayers ~ ~ 12 12 false @e[tag=AltCoinSpawnDB]
