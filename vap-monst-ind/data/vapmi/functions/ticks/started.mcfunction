@@ -53,16 +53,11 @@ function vapmi:utilities/manage-tiers/armor-3
 function vapmi:utilities/manage-tiers/food-2
 function vapmi:utilities/manage-tiers/food-3
 
-
-
-execute as @e[type=minecraft:zoglin,y_rotation=-45..45] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~ ~ ~0.1
-
-execute as @e[type=minecraft:zoglin,y_rotation=-134.9..-45.1] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~0.1 ~ ~
-
-execute as @e[type=minecraft:zoglin,y_rotation=-180..-134.9] run execute if entity @p[distance=0..10,sort=nearest] run execute at @s run tp @s ~ ~ ~-0.1
-execute as @e[type=minecraft:zoglin,y_rotation=135..180] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~ ~ ~-0.1
-
-execute as @e[type=minecraft:zoglin,y_rotation=45..135] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~-0.1 ~ ~
+# execute as @e[type=minecraft:zoglin,y_rotation=-45..45] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~ ~ ~0.1
+# execute as @e[type=minecraft:zoglin,y_rotation=-134.9..-45.1] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~0.1 ~ ~
+# execute as @e[type=minecraft:zoglin,y_rotation=-180..-134.9] run execute if entity @p[distance=0..10,sort=nearest] run execute at @s run tp @s ~ ~ ~-0.1
+# execute as @e[type=minecraft:zoglin,y_rotation=135..180] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~ ~ ~-0.1
+# execute as @e[type=minecraft:zoglin,y_rotation=45..135] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~-0.1 ~ ~
 
 
 
