@@ -1,1 +1,2 @@
-summon creeper ~ ~ ~ {NoAI:true,Fuse:999999,powered:true,CustomName:'"FireworkCreeper"'}
+# summon creeper ~ ~ ~ {NoAI:true,Fuse:999999,powered:true,CustomName:'"FireworkCreeper"'}
+summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,CustomName:'{"text":"FireworkCreeper"}',ArmorItems:[{id:"minecraft:leather_boots", Count:1b, tag:{Damage: 0, display: {color: 8190976}}},{id:"minecraft:leather_leggings", Count:1b, tag:{Damage: 0, display: {color: 8190976}}},{id:"minecraft:leather_chestplate", Count:1b, tag:{Damage: 0, display: {color: 8190976}}},{id:"minecraft:creeper_head", Count:1b}],Team:"Yellow"}

@@ -77,3 +77,10 @@ scoreboard players set _CURRENT GameState 2
 
 # Move all the creepers real quick
 function vapmi:game/firework-creeper/move-creeper/red
+function vapmi:game/firework-creeper/move-creeper/orange
+function vapmi:game/firework-creeper/move-creeper/yellow
+function vapmi:game/firework-creeper/move-creeper/blue
+function vapmi:game/firework-creeper/move-creeper/green
+function vapmi:game/firework-creeper/move-creeper/dark_blue
+function vapmi:game/firework-creeper/move-creeper/purple
+function vapmi:game/firework-creeper/move-creeper/white
