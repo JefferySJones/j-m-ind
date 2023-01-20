@@ -30,6 +30,6 @@ scoreboard players set _SET_GAME_READY GameState 0
 scoreboard players set _COUNTDOWN GameState 5
 
 advancement revoke @a from vapmi:root
-function vapmi:utilities/fresh-scores
+function vapmi:utils/fresh-scores
 
 # /execute as @a[dx=-1,dy=10,dz=-1,y=27] if score @s Crouching matches 1 run tp 1.0 23 0.0

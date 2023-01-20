@@ -11,7 +11,7 @@ execute if score _EVERY_SECOND Timers matches 11 run execute run function vapmi:
 function vapmi:game/chicken/blue
 function vapmi:game/cauldron-game/blue/game-tick
 execute if score _BLUE_FWCREEP FireworkCreeper matches 1..4 run function vapmi:game/firework-creeper/check-player/blue
-function vapmi:utilities/summon/all-coal-zombies/blue-timer
+function vapmi:utils/summon/all-coal-zombies/blue-timer
 
 # Parkour
 execute at @e[name="CenterB"] if score _BLUE_PARKOUR_LOCK GameState matches 1 run execute if block ~21.5 ~7 ~-18.5 stone_pressure_plate[powered=false] run scoreboard players set _BLUE_PARKOUR_LOCK GameState 0
