@@ -10,6 +10,10 @@ execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR Ga
 function vapmi:utils/remove-all-eggs
 function vapmi:utils/clear-glass-bottles
 
+function vapmi:mobs/replace-special-creeper-villager
+function vapmi:mobs/replace-pogo-stray-villager
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/cleanup-tnt-heads
+
 execute if score Red Stocks matches 1..2147483647 run function vapmi:game/active-player/red
 execute if score Orange Stocks matches 1..2147483647 run function vapmi:game/active-player/orange
 execute if score Yellow Stocks matches 1..2147483647 run function vapmi:game/active-player/yellow
@@ -22,10 +26,6 @@ execute if score White Stocks matches 1..2147483647 run function vapmi:game/acti
 execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:villagers/initialize-villagers
 
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{display:{Name:'[{"text":"XP Scrubber"}]'}}}}] run function vapmi:utils/xp-scrub
-
-execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/replace-special-creeper-villager
-execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/replace-pogo-stray-villager
-execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/cleanup-tnt-heads
 
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
