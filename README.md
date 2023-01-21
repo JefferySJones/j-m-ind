@@ -2,7 +2,7 @@
 
 ## Changelog:
 
-### v1.0.0a
+### v1.0.1b
 
 ### Setup Instructions
 1. Put vap-monst-ind datapack into your world
@@ -15,10 +15,6 @@
 ---
 
 ### Future
-- [ ] Way to prevent mobs from going specific places
-- [ ] Way to prevent players from camping in a safe spot
-- [ ] Fix coal / spider eye purchases use the right "Coal" and "Spider Eye"
-
 Ideas: Show how many players are in each team in the lobby
 Ideas: Make dying mobs drop coins
 Ideas: Harder mobs to defeat would drop more and easier mobs would drop less
