@@ -7,6 +7,19 @@ tag @e[tag=Camp_4] add Camp_3
 tag @e[tag=Camp_5] add Camp_4
 tag @e[tag=Camp_6] add Camp_5
 
+tag @e[tag=Camp_5] remove Camp_6
+tag @e[tag=Camp_4] remove Camp_5
+tag @e[tag=Camp_3] remove Camp_4
+tag @e[tag=Camp_2] remove Camp_3
+tag @e[tag=Camp_1] remove Camp_2
+
+tag @e[tag=Camp_0] remove Camp_1
+tag @e[tag=Camp_0] remove Camp_2
+tag @e[tag=Camp_0] remove Camp_3
+tag @e[tag=Camp_0] remove Camp_4
+tag @e[tag=Camp_0] remove Camp_5
+tag @e[tag=Camp_0] remove Camp_6
+
 title @a[tag=Camp_5] times 5 10 5
 title @a[tag=Camp_5] title "5"
 title @a[tag=Camp_5] subtitle "Teleporting to defend!"
@@ -27,11 +40,6 @@ title @a[tag=Camp_1] times 5 10 5
 title @a[tag=Camp_1] title "1"
 title @a[tag=Camp_1] subtitle "Teleporting to defend!"
 
-tag @e[tag=Camp_5] remove Camp_6
-tag @e[tag=Camp_4] remove Camp_5
-tag @e[tag=Camp_3] remove Camp_4
-tag @e[tag=Camp_2] remove Camp_3
-tag @e[tag=Camp_1] remove Camp_2
-tag @e[tag=Camp_0] remove Camp_1
+
 
 
