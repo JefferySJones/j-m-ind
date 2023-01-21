@@ -1,1 +1,1 @@
-execute at @e[name="CenterR"] run execute as @e[distance=18.9..27,type=!player,type=!item_frame,type=!glow_item_frame,type=!armor_stand,type=!villager,type=!item] run execute at @s run tp @s @e[sort=nearest,name="SpawnR",limit=1]
+execute at @e[name="CenterR"] run execute as @e[distance=18.9..27,type=!player,type=!item_frame,type=!glow_item_frame,type=!armor_stand,type=!villager,type=!item,team=!NoCollision] run execute at @s run tp @s @e[sort=nearest,name="SpawnR",limit=1]

@@ -30,6 +30,7 @@ execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/cleanup-
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/teleport-from/degrade-summons
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/anti-camp/degrade-camp
 
 
 # # Run firework creeper tp every 4 ticks - no longer necessary
