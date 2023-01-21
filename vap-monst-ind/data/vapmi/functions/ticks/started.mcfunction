@@ -23,8 +23,14 @@ execute if score _VILLAGERS_INITIALIZED GameState matches 0 run function vapmi:v
 
 execute if entity @e[type=item,nbt={Item:{id:"minecraft:stone_button",tag:{display:{Name:'[{"text":"XP Scrubber"}]'}}}}] run function vapmi:utils/xp-scrub
 
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/replace-special-creeper-villager
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/replace-pogo-stray-villager
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/cleanup-tnt-heads
+
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-currency/degrade-coins
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/teleport-from/degrade-summons
+
 
 # # Run firework creeper tp every 4 ticks - no longer necessary
 # execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/firework-creeper/degrade-tag-and-tp

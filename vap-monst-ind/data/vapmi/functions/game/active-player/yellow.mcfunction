@@ -3,6 +3,8 @@ execute if score Yellow Stocks matches -99999999..0 run function vapmi:game/dest
 
 function vapmi:game/detect-target-button/yellow
 function vapmi:game/teleport-from/yellow
+function vapmi:game/teleport-radius/yellow
+function vapmi:game/anti-camp/yellow
 # function vapmi:game/currency/spawn-yellow-safe
 # Alt Currency
 execute if score _EVERY_SECOND Timers matches 1 run execute run function vapmi:game/alt-currency/yellow/spread-and-spawn

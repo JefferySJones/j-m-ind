@@ -1,3 +1,6 @@
+
+
+
 # Debug Logs
 execute unless entity @e[name="CenterB"] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"game\/teleport-from\/blue: Unable to find armor_stand named CenterB", "color": "gray", "bold": false}]
 execute if score _BLUE_TARGET GameState matches 1 run execute unless entity @e[name="SpawnR"] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"game\/teleport-from\/blue: Unable to find armor_stand named SpawnR", "color": "gray", "bold": false}]
@@ -10,32 +13,34 @@ execute if score _BLUE_TARGET GameState matches 7 run execute unless entity @e[n
 execute if score _BLUE_TARGET GameState matches 8 run execute unless entity @e[name="SpawnW"] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"game\/teleport-from\/blue: Unable to find armor_stand named SpawnW", "color": "gray", "bold": false}]
 
 
+execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..3,tag=,type=!minecraft:player,type=!minecraft:item] run tag @s add Summon_3
+
 # Join the team
 execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..3,team=] run team join Blue @s
 
 # Pick Matching Target, Get Entitys At the Spawner using CenterB, Radius the size of spawner (0..2), Teleport to random spawn point of the target color
 # Red
-execute if score _BLUE_TARGET GameState matches 1 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnR",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 1 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnR",sort=random,limit=1] run tp ~ ~1 ~
 
 # Orange
-execute if score _BLUE_TARGET GameState matches 2 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnO",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 2 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnO",sort=random,limit=1] run tp ~ ~1 ~
 
 # Yellow
-execute if score _BLUE_TARGET GameState matches 3 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnY",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 3 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnY",sort=random,limit=1] run tp ~ ~1 ~
 
 # Green
-execute if score _BLUE_TARGET GameState matches 4 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnG",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 4 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnG",sort=random,limit=1] run tp ~ ~1 ~
 
 # Blue
-# execute if score _BLUE_TARGET GameState matches 5 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnB",sort=random,limit=1] run tp ~ ~1 ~
+# execute if score _BLUE_TARGET GameState matches 5 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnB",sort=random,limit=1] run tp ~ ~1 ~
 
 # Dark_Blue
-execute if score _BLUE_TARGET GameState matches 6 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnDB",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 6 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnDB",sort=random,limit=1] run tp ~ ~1 ~
 
 # Purple
-execute if score _BLUE_TARGET GameState matches 7 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnP",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 7 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnP",sort=random,limit=1] run tp ~ ~1 ~
 
 # White
-execute if score _BLUE_TARGET GameState matches 8 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnW",sort=random,limit=1] run tp ~ ~1 ~
+execute if score _BLUE_TARGET GameState matches 8 run execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[distance=0..2,team=Blue,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnW",sort=random,limit=1] run tp ~ ~1 ~
 
 

@@ -2,7 +2,8 @@ scoreboard players remove Yellow Stocks 200
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterY",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/yellow: Unable to find armor_stand named CenterY", "color": "gray", "bold": false}]
-execute at @e[name="CenterY"] run kill @e[nbt={NoAI:false},type=!minecraft:armor_stand,type=!minecraft:item_frame,type=!minecraft:arrow,type=!minecraft:chicken,type=!minecraft:player,type=!minecraft:villager,distance=0..32]
+execute at @e[name="CenterY"] run kill @e[type=!minecraft:armor_stand,type=!minecraft:item_frame,type=!minecraft:arrow,type=!minecraft:chicken,type=!minecraft:player,type=!minecraft:villager,distance=0..32,type=!minecraft:glow_item_frame]
+execute at @e[name="CenterY"] run kill @e[type=item]
 
 # Remove 1 Nether Star
 clear @a[team=Yellow,scores={PlayerDeaths=1..999}] nether_star 1
