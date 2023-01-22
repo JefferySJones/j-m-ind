@@ -1,7 +1,5 @@
 say @a[team=Dark_Blue] has had their company crumble beneath their feet
-team join Spectator @a[team=Dark_Blue]
 gamemode spectator @a[team=Dark_Blue]
-scoreboard players reset Dark_Blue Stocks
 
 execute at @e[name="CenterR",type=armor_stand] run function vapmi:utils/update-target-buttons
 execute at @e[name="CenterO",type=armor_stand] run function vapmi:utils/update-target-buttons
