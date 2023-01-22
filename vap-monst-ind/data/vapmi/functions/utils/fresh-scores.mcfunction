@@ -116,4 +116,3 @@ scoreboard players set _PURPLE_FWCREEP FireworkCreeper 0
 scoreboard players set _PURPLE_PLAYER FireworkCreeper 0
 scoreboard players set _WHITE_FWCREEP FireworkCreeper 0
 scoreboard players set _WHITE_PLAYER FireworkCreeper 0
-

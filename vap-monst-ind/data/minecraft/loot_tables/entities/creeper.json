@@ -6,7 +6,75 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{CustomName: '{\"text\":\"Dinnerbone\"}'}"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player"
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.6
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{powered:1b}"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_rocket",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -17,7 +85,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedCreeper": {
                       "min": 10,
                       "max": 99999
                     }
@@ -34,7 +102,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedCreeper": {
                       "min": 30,
                       "max": 99999
                     }
@@ -51,7 +119,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedCreeper": {
                       "min": 60,
                       "max": 99999
                     }
@@ -71,7 +139,7 @@
           "condition": "minecraft:entity_scores",
           "entity": "killer_player",
           "scores": {
-            "SummonedZombie": {
+            "SummonedCreeper": {
               "min": 10,
               "max": 999999
             }
@@ -116,12 +184,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:firework_rocket",
           "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Coal\"}]'}}"
-            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -141,6 +205,15 @@
               "chance": 0.3
             }
           ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{powered:0b}"
+          }
         }
       ]
     }

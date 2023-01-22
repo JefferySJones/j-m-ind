@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:bone",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -17,7 +17,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSkeleton": {
                       "min": 10,
                       "max": 99999
                     }
@@ -34,7 +34,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSkeleton": {
                       "min": 30,
                       "max": 99999
                     }
@@ -51,7 +51,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSkeleton": {
                       "min": 60,
                       "max": 99999
                     }
@@ -71,7 +71,7 @@
           "condition": "minecraft:entity_scores",
           "entity": "killer_player",
           "scores": {
-            "SummonedZombie": {
+            "SummonedSkeleton": {
               "min": 10,
               "max": 999999
             }
@@ -104,7 +104,7 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.3
+              "chance": 0.5
             }
           ]
         }
@@ -116,12 +116,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:bone",
           "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Coal\"}]'}}"
-            },
             {
               "function": "minecraft:set_count",
               "count": {
@@ -138,7 +134,7 @@
             },
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.3
+              "chance": 0.5
             }
           ]
         }

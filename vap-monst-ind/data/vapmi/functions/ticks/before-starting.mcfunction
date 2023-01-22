@@ -28,14 +28,14 @@ execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
 function vapmi:utils/setup-spawner
 
-execute at @e[name="CenterR",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterO",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterY",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterG",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterB",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterDB",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterP",type=armor_stand] run function vapmi/utils/update-target-buttons
-execute at @e[name="CenterW",type=armor_stand] run function vapmi/utils/update-target-buttons
+execute at @e[name="CenterR",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterO",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterY",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterG",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterB",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterDB",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterP",type=armor_stand] run function vapmi:utils/update-target-buttons
+execute at @e[name="CenterW",type=armor_stand] run function vapmi:utils/update-target-buttons
 
 # TODO: Adjust center rel position
 execute at @e[name="CenterR",type=armor_stand] positioned ~ ~ ~ run tp @a[team=Red] ~ ~ ~

@@ -12,7 +12,7 @@ gamerule doTraderSpawning false
 gamerule mobGriefing false
 gamerule keepInventory true
 gamerule universalAnger true
-
-# Is this right?
 gamerule doMobSpawning false
+
+difficulty hard
 

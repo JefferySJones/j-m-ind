@@ -32,6 +32,7 @@ execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/alt-curr
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/teleport-from/degrade-summons
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/anti-camp/degrade-camp
 
+execute if score _EVERY_SECOND Timers matches 0 run function vapmi:scoreboards/update-summoncount
 
 # # Run firework creeper tp every 4 ticks - no longer necessary
 # execute if score _EVERY_SECOND Timers matches 0 run function vapmi:game/firework-creeper/degrade-tag-and-tp

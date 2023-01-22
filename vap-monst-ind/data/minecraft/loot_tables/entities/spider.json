@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:spider_eye",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -17,7 +17,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSpider": {
                       "min": 10,
                       "max": 99999
                     }
@@ -34,7 +34,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSpider": {
                       "min": 30,
                       "max": 99999
                     }
@@ -51,7 +51,7 @@
                   "condition": "minecraft:entity_scores",
                   "entity": "killer_player",
                   "scores": {
-                    "SummonedZombie": {
+                    "SummonedSpider": {
                       "min": 60,
                       "max": 99999
                     }
@@ -71,7 +71,7 @@
           "condition": "minecraft:entity_scores",
           "entity": "killer_player",
           "scores": {
-            "SummonedZombie": {
+            "SummonedSpider": {
               "min": 10,
               "max": 999999
             }
@@ -116,11 +116,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:spider_eye",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'[{\"text\":\"Coal\"}]'}}"
+              "tag": "{display:{Name:'[{\"text\":\"Spider Eye\"}]'}}"
             },
             {
               "function": "minecraft:set_count",
