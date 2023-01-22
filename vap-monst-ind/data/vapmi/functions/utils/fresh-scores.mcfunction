@@ -9,6 +9,7 @@ scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
 # Add To Constants
 scoreboard players set SIDEBAR_TICKS Constants 200
 scoreboard players set ZERO Constants 0
+scoreboard players set _LIVES_MULTIPLIER Constants 200
 
 # _SIDEBAR 0 = None | 1 = Mob Count | 2 = Stocks
 scoreboard players set _SIDEBAR GameState 0

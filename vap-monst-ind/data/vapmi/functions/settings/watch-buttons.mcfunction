@@ -1,9 +1,9 @@
-# execute at @e[tag=_BASE_STOCKS_SETTING] 
+# execute at @e[tag=_BASE_STOCK_SETTING] 
 # execute at @e[tag=_YELLOW_STOCK_MODIFIER_SETTING]
-execute at @e[tag=_BASE_STOCKS_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run function vapmi:settings/decrease/base-stocks
-execute at @e[tag=_BASE_STOCKS_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] {ItemRotation:0}
-execute at @e[tag=_BASE_STOCKS_SETTING] positioned ~ ~1 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run function vapmi:settings/increase/base-stocks
-execute at @e[tag=_BASE_STOCKS_SETTING] positioned ~ ~1 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] {ItemRotation:0}
+execute at @e[tag=_BASE_STOCK_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run function vapmi:settings/decrease/base-stocks
+execute at @e[tag=_BASE_STOCK_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] {ItemRotation:0}
+execute at @e[tag=_BASE_STOCK_SETTING] positioned ~ ~1 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run function vapmi:settings/increase/base-stocks
+execute at @e[tag=_BASE_STOCK_SETTING] positioned ~ ~1 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] {ItemRotation:0}
 
 execute at @e[tag=_RED_STOCK_MODIFIER_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run function vapmi:settings/decrease/red-stocks-modifier
 execute at @e[tag=_RED_STOCK_MODIFIER_SETTING] positioned ~ ~-2 ~ run execute if entity @e[type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..0.5,nbt={ItemRotation:1b}] {ItemRotation:0}

@@ -17,14 +17,45 @@ execute if entity @p[team=Purple] run team join Purple Purple
 execute if entity @p[team=White] run team join White White
 
 # Set "Team" Stocks
-execute if entity @p[team=Red] run scoreboard players set Red Stocks 1000
-execute if entity @p[team=Orange] run scoreboard players set Orange Stocks 1000
-execute if entity @p[team=Yellow] run scoreboard players set Yellow Stocks 1000
-execute if entity @p[team=Green] run scoreboard players set Green Stocks 1000
-execute if entity @p[team=Blue] run scoreboard players set Blue Stocks 1000
-execute if entity @p[team=Dark_Blue] run scoreboard players set Dark_Blue Stocks 1000
-execute if entity @p[team=Purple] run scoreboard players set Purple Stocks 1000
-execute if entity @p[team=White] run scoreboard players set White Stocks 1000
+execute if entity @p[team=Red] run scoreboard players operation Red Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Red] run scoreboard players operation Red Stocks -= _RED_STOCK_MODIFIER Settings
+execute if entity @p[team=Red] run scoreboard players operation Red Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Orange] run scoreboard players operation Orange Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Orange] run scoreboard players operation Orange Stocks -= _ORANGE_STOCK_MODIFIER Settings
+execute if entity @p[team=Orange] run scoreboard players operation Orange Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Yellow] run scoreboard players operation Yellow Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Yellow] run scoreboard players operation Yellow Stocks -= _YELLOW_STOCK_MODIFIER Settings
+execute if entity @p[team=Yellow] run scoreboard players operation Yellow Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Green] run scoreboard players operation Green Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Green] run scoreboard players operation Green Stocks -= _GREEN_STOCK_MODIFIER Settings
+execute if entity @p[team=Green] run scoreboard players operation Green Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Blue] run scoreboard players operation Blue Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Blue] run scoreboard players operation Blue Stocks -= _BLUE_STOCK_MODIFIER Settings
+execute if entity @p[team=Blue] run scoreboard players operation Blue Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Dark_Blue] run scoreboard players operation Dark_Blue Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Dark_Blue] run scoreboard players operation Dark_Blue Stocks -= _DARK_BLUE_STOCK_MODIFIER Settings
+execute if entity @p[team=Dark_Blue] run scoreboard players operation Dark_Blue Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=Purple] run scoreboard players operation Purple Stocks = _BASE_STOCK Settings
+execute if entity @p[team=Purple] run scoreboard players operation Purple Stocks -= _PURPLE_STOCK_MODIFIER Settings
+execute if entity @p[team=Purple] run scoreboard players operation Purple Stocks *= _LIVES_MULTIPLIER Constants
+
+execute if entity @p[team=White] run scoreboard players operation White Stocks = _BASE_STOCK Settings
+execute if entity @p[team=White] run scoreboard players operation White Stocks -= _WHITE_STOCK_MODIFIER Settings
+execute if entity @p[team=White] run scoreboard players operation White Stocks *= _LIVES_MULTIPLIER Constants
+
+# execute if entity @p[team=Orange] run scoreboard players set Orange Stocks 1000
+# execute if entity @p[team=Yellow] run scoreboard players set Yellow Stocks 1000
+# execute if entity @p[team=Green] run scoreboard players set Green Stocks 1000
+# execute if entity @p[team=Blue] run scoreboard players set Blue Stocks 1000
+# execute if entity @p[team=Dark_Blue] run scoreboard players set Dark_Blue Stocks 1000
+# execute if entity @p[team=Purple] run scoreboard players set Purple Stocks 1000
+# execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
 function vapmi:utils/setup-spawner
 

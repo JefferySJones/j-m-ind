@@ -24,7 +24,7 @@ scoreboard objectives add Cauldron dummy
 scoreboard objectives add FireworkCreeper dummy
 scoreboard objectives add Settings dummy
 
-scoreboard players set _BASE_STOCKS Settings 1
+scoreboard players set _BASE_STOCK Settings 3
 scoreboard players set _RED_STOCK_MODIFIER Settings 0
 scoreboard players set _ORANGE_STOCK_MODIFIER Settings 0
 scoreboard players set _YELLOW_STOCK_MODIFIER Settings 0

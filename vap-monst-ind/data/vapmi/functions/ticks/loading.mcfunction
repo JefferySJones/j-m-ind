@@ -76,4 +76,11 @@ execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Spectator] run
 # Start Game Message
 execute if score _SET_GAME_READY GameState matches 0 run execute unless entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 1
 execute if score _SET_GAME_READY GameState matches 1 run execute if entity @e[type=player,team=Loading] run scoreboard players set _SET_GAME_READY GameState 0
-execute if score _SET_GAME_READY GameState matches 1 if score _EVERY_TEN_SECONDS Timers matches 0 run function vapmi:game/start-game-message
+# execute if score _SET_GAME_READY GameState matches 1 if score _EVERY_TEN_SECONDS Timers matches 0 run function vapmi:game/start-game-message
+
+# Not ready and player is nearby "start game"
+execute if score _SET_GAME_READY GameState matches 0 run execute at @e[name="StartGame"] run execute if entity @p[distance=0..2] run tellraw @a[distance=0..2] [{"text":"Not everyone has chosen a team yet.","color":"red"}]
+execute if score _SET_GAME_READY GameState matches 0 run execute at @e[name="StartGame"] run execute if entity @p[distance=0..2] run tp @a[distance=0..2] @e[name="Loading",limit=1,sort=nearest]
+
+# Ready and player is nearby "start game"
+execute if score _SET_GAME_READY GameState matches 1 run execute at @e[name="StartGame"] run execute if entity @p[distance=0..2] run function vapmi:game/start-game
