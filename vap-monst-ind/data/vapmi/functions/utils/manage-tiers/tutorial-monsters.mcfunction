@@ -1,4 +1,4 @@
-execute at @e[name="ShopTut"] positioned ~ ~ ~ run kill @e[distance=0..4,type=villager]
+execute at @e[name="MonsterTut"] positioned ~ ~ ~ run kill @e[distance=0..4,type=villager]
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~-2.2 run function vapmi:utils/summon/villager/zombie-shop
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~-1.1 run function vapmi:utils/summon/villager/spider-shop
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~0 run function vapmi:utils/summon/villager/skeleton-shop
