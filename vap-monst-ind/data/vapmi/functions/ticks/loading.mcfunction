@@ -57,6 +57,10 @@ execute at @e[name="TeamPickW"] run tp @e[team=White,gamemode=!spectator,sort=ne
 execute at @e[name="TeamPickSpec"] run execute at @e[team=Loading,gamemode=!spectator,sort=nearest,type=player,limit=1,distance=0..2] run function vapmi:teams/join-spectator
 execute at @e[name="TeamPickSpec"] run tp @e[team=Spectator,gamemode=!spectator,sort=nearest,type=player,distance=0..2] @e[name="TeamPicked",limit=1]
 
+execute at @e[name="ToLoading"] run execute run tp @p[gamemode=!spectator,distance=0..2] @e[limit=1,name="Loading",sort=random]
+execute at @e[name="ToTutorial"] run execute run tp @p[gamemode=!spectator,distance=0..2] @e[limit=1,name="Tutorial",sort=random]
+
+function vapmi:settings/watch-buttons
 
 # Give heads of colors
 execute if score _EVERY_SECOND Timers matches 0 if entity @e[team=Red] run function vapmi:heads/give-red

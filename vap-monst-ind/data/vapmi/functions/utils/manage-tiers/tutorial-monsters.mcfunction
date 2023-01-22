@@ -4,4 +4,4 @@ execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~-1.1 run function vapmi:uti
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~0 run function vapmi:utils/summon/villager/skeleton-shop
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~1.1 run function vapmi:utils/summon/villager/creeper-shop
 execute at @e[name="MonsterTut"] positioned ~ ~-0.5 ~2.2 run function vapmi:utils/summon/villager/boss-shop
-execute at @e[name="MonsterTut"] run execute as @e[distance=0..10,type=minecraft:villager] run execute at @s run tp @s ~ ~ ~ facing entity @e[team=Red,limit=1,type=armor_stand,name="CenterR"]
+execute at @e[name="MonsterTut"] run execute as @e[distance=0..10,type=minecraft:villager] run execute at @s run tp @s ~ ~ ~ 90 0

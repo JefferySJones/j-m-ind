@@ -9,6 +9,7 @@ scoreboard objectives remove Coins
 scoreboard objectives remove DEBUG
 scoreboard objectives remove Cauldron
 scoreboard objectives remove FireworkCreeper
+# scoreboard objectives remove Settings
 
 # Add main scoreboards
 scoreboard objectives add Timers dummy "Timers"
@@ -21,6 +22,17 @@ scoreboard objectives add Coins dummy "Coins"
 scoreboard objectives add DEBUG dummy
 scoreboard objectives add Cauldron dummy
 scoreboard objectives add FireworkCreeper dummy
+scoreboard objectives add Settings dummy
+
+scoreboard players set _BASE_STOCKS Settings 1
+scoreboard players set _RED_STOCK_MODIFIER Settings 0
+scoreboard players set _ORANGE_STOCK_MODIFIER Settings 0
+scoreboard players set _YELLOW_STOCK_MODIFIER Settings 0
+scoreboard players set _GREEN_STOCK_MODIFIER Settings 0
+scoreboard players set _BLUE_STOCK_MODIFIER Settings 0
+scoreboard players set _DARK_BLUE_STOCK_MODIFIER Settings 0
+scoreboard players set _PURPLE_STOCK_MODIFIER Settings 0
+scoreboard players set _WHITE_STOCK_MODIFIER Settings 0
 
 # Villager State
 scoreboard objectives add VillagerStateRed dummy "Villager State"
