@@ -4,4 +4,4 @@ execute at @e[name="ToSpawn"] run execute run tp @a[gamemode=!spectator,distance
 
 function vapmi:advancements/revoke-all
 
-execute unless entity @e[team=!Debug,team=!Loading,team=!Spectator] run scoreboard players set _CURRENT GameState 0
+execute unless entity @p[team=!Debug,team=!Loading,team=!Spectator] run scoreboard players set _CURRENT GameState 0
