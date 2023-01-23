@@ -27,7 +27,6 @@ scoreboard players set _WHITE_TARGET GameState 0
 
 scoreboard players set _VILLAGERS_INITIALIZED GameState 0
 scoreboard players set _COUNTDOWN GameState 5
-scoreboard players set _CURRENT GameState 0
 scoreboard players set _SEE_ARMOR DEBUG 0
 scoreboard players set _SET_GAME_READY GameState 0
 

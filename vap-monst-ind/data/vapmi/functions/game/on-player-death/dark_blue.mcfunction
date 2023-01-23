@@ -1,4 +1,4 @@
-scoreboard players remove Dark_Blue Stocks 200
+scoreboard players operation Dark_Blue Stocks -= _LIVES_MULTIPLIER Constants
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterDB",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/dark_blue: Unable to find armor_stand named CenterDB", "color": "gray", "bold": false}]

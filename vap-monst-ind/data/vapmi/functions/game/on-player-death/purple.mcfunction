@@ -1,4 +1,4 @@
-scoreboard players remove Purple Stocks 200
+scoreboard players operation Purple Stocks -= _LIVES_MULTIPLIER Constants
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterP",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/purple: Unable to find armor_stand named CenterP", "color": "gray", "bold": false}]

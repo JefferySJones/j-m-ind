@@ -1,4 +1,4 @@
-scoreboard players remove Red Stocks 200
+scoreboard players operation Red Stocks -= _LIVES_MULTIPLIER Constants
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterR",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/red: Unable to find armor_stand named CenterR", "color": "gray", "bold": false}]

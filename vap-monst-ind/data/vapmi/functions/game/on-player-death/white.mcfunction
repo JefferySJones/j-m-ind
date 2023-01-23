@@ -1,4 +1,4 @@
-scoreboard players remove White Stocks 200
+scoreboard players operation White Stocks -= _LIVES_MULTIPLIER Constants
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterW",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/white: Unable to find armor_stand named CenterW", "color": "gray", "bold": false}]

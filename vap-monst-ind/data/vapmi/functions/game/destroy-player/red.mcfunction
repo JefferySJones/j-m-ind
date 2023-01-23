@@ -10,5 +10,4 @@ execute at @e[name="CenterDB",type=armor_stand] run function vapmi:utils/update-
 execute at @e[name="CenterP",type=armor_stand] run function vapmi:utils/update-target-buttons
 execute at @e[name="CenterW",type=armor_stand] run function vapmi:utils/update-target-buttons
 
-
-# TODO: function start end-game?
+function vapmi:game/check-end-game

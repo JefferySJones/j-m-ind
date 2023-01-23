@@ -1,4 +1,4 @@
-scoreboard players remove Orange Stocks 200
+scoreboard players operation Orange Stocks -= _LIVES_MULTIPLIER Constants
 
 # Kill all mobs in their area 
 execute unless entity @e[name="CenterO",limit=1,type=minecraft:armor_stand] run tellraw @a[team=Debug] [{"text":"[DEBUG] ", "color": "gray", "bold": true}, {"text":"kill-player\/orange: Unable to find armor_stand named CenterO", "color": "gray", "bold": false}]
