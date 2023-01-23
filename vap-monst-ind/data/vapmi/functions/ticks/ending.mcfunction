@@ -2,6 +2,8 @@ execute if score _TOTAL_PLAYERS_ALIVE Stocks matches ..1 run say "Game Over!"
 execute if score _TOTAL_PLAYERS_ALIVE Stocks matches ..1 run function vapmi:game/set-winner
 execute if score _TOTAL_PLAYERS_ALIVE Stocks matches ..1 run function vapmi:game/announce-winner
 
+tp @a[team=!Spectator,team=!Debug] 0 0 0
+gamemode adventure @a[team=!Spectator,team=!Debug]
 # Teleport all players to the victory area
 tp @a[team=!Debug] @e[limit=1,sort=random,name="Ending"] 
 
