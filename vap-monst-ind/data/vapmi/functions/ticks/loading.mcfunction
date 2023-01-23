@@ -1,5 +1,5 @@
 # execute if score _EVERY_TEN_SECONDS Timers matches 0 run say "Loading!"
-execute if score _EVERY_TEN_SECONDS Timers matches 0 run tp @a[team=Loading] 0 0 0
+execute if score _EVERY_TEN_SECONDS Timers matches 0 run execute positioned 0 0 0 run tp @a[distance=16..,team=Loading] 0 0 0
 
 clear @a minecraft:sunflower{display:{Name:'{"text":"\\u00A76Gold Coin"}'}}
 team join Loading @a[team=]
