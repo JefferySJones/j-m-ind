@@ -6,4 +6,9 @@ execute at @e[limit=1,sort=random,name="Ending"] run tp @a[distance=20..,team=!D
 
 function vapmi:advancements/revoke-all
 
+# Give Saturation/Resistance to players
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:saturation 2 10 true
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:resistance 2 20 true
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:regeneration 2 10 true
+
 execute unless entity @p[team=!Debug,team=!Loading,team=!Spectator] run scoreboard players set _CURRENT GameState 0
