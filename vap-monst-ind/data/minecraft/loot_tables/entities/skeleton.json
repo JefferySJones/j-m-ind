@@ -3,84 +3,6 @@
   "pools": [
     {
       "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": false,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "killer_player",
-                  "scores": {
-                    "SummonedSkeleton": {
-                      "min": 10,
-                      "max": 99999
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": false,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "killer_player",
-                  "scores": {
-                    "SummonedSkeleton": {
-                      "min": 30,
-                      "max": 99999
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": false,
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "killer_player",
-                  "scores": {
-                    "SummonedSkeleton": {
-                      "min": 60,
-                      "max": 99999
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
-        },
-        {
-          "condition": "minecraft:entity_scores",
-          "entity": "killer_player",
-          "scores": {
-            "SummonedSkeleton": {
-              "min": 10,
-              "max": 999999
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -96,7 +18,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 2
+                "max": 3
               },
               "add": false
             }
@@ -104,37 +26,7 @@
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 0.3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              },
-              "add": false
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:killed_by_player"
-            },
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.3
+              "chance": 0.2
             }
           ]
         }
