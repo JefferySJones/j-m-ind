@@ -23,9 +23,10 @@ execute at @e[name="TeamPicked",type=armor_stand] if score @p[team=Loading,dista
 # Delete all items around people who are in the 'loading' team
 execute if score _EVERY_SECOND Timers matches 0 at @a run kill @e[type=minecraft:item,distance=0..30]
 
-# Give Saturation to players
-execute if score _EVERY_SECOND Timers matches 0 at @e[name="TeamPicked",type=armor_stand] run effect give @a[distance=0..20] minecraft:saturation 2 10 true
-execute if score _EVERY_SECOND Timers matches 0 positioned 0 0 0 run effect give @a[distance=0..20] minecraft:saturation 2 10 true
+# Give Saturation/Resistance to players
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:saturation 2 10 true
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:resistance 2 20 true
+execute if score _EVERY_SECOND Timers matches 0 at @a run effect give @a[distance=0..20] minecraft:regeneration 2 10 true
 
 # Reset Scores
 scoreboard players reset @a[scores={Crouching=1..9999999}] Crouching
