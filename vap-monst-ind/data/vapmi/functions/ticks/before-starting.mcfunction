@@ -58,6 +58,7 @@ execute if entity @p[team=White] run scoreboard players operation White Stocks *
 # execute if entity @p[team=White] run scoreboard players set White Stocks 1000
 
 function vapmi:utils/setup-spawner
+function vapmi:utils/debug/toggle-armorstands-marker-on
 
 execute at @e[name="CenterR",type=armor_stand] run function vapmi:utils/update-target-buttons
 execute at @e[name="CenterO",type=armor_stand] run function vapmi:utils/update-target-buttons
