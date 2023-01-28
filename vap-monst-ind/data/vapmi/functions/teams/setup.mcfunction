@@ -2,7 +2,7 @@
 team add Loading "Loading"
 team modify Loading prefix "[LOAD]"
 team modify Loading color dark_gray
-team join Loading @a
+team join Loading @a[team=!Debug]
 
 # Clear Player Heads
 clear @a[team=] minecraft:player_head
