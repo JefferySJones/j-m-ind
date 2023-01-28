@@ -57,4 +57,16 @@ team modify Purple color dark_purple
 team modify White color gray
 team modify Spectator color dark_gray
 
+# Set Friendly Fire To False
+team modify Red friendlyFire false
+team modify Orange friendlyFire false
+team modify Yellow friendlyFire false
+team modify Green friendlyFire false
+team modify Blue friendlyFire false
+team modify Dark_Blue friendlyFire false
+team modify Purple friendlyFire false
+team modify White friendlyFire false
+team modify Loading friendlyFire false
+team modify Spectator friendlyFire false
+
 
