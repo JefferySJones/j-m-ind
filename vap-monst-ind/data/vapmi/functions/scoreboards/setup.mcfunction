@@ -45,14 +45,14 @@ scoreboard objectives add VillagerStatePurple dummy "Villager State"
 scoreboard objectives add VillagerStateWhite dummy "Villager State"
 
 # Reset Deaths / Jump Time / Crouch Time
-scoreboard objectives add PlayerDeaths minecraft.custom:minecraft.deaths "Player Deaths"
-scoreboard objectives add Jump minecraft.custom:minecraft.jump "Player Jump Time"
-scoreboard objectives add Crouching minecraft.custom:minecraft.crouch_one_cm "Player Crouch Time"
+scoreboard objectives remove PlayerDeaths
+scoreboard objectives remove Jump
+scoreboard objectives remove Crouching
 
 # Create Deaths / Jump Time / Crouch Time
 scoreboard objectives add PlayerDeaths minecraft.custom:minecraft.deaths "Player Deaths"
 scoreboard objectives add Jump minecraft.custom:minecraft.jump "Player Jump Time"
-scoreboard objectives add Crouching minecraft.custom:minecraft.crouch_one_cm "Player Crouch Time"
+scoreboard objectives add Crouching minecraft.custom:minecraft.sneak_time "Player Crouch Time"
 
 # Reset Summons
 scoreboard objectives remove SummonedZombieMC
