@@ -9,6 +9,7 @@ scoreboard objectives remove Coins
 scoreboard objectives remove DEBUG
 scoreboard objectives remove Cauldron
 scoreboard objectives remove FireworkCreeper
+scoreboard objectives remove Dragon_Evokers
 # scoreboard objectives remove Settings
 
 # Add main scoreboards
@@ -23,6 +24,7 @@ scoreboard objectives add DEBUG dummy
 scoreboard objectives add Cauldron dummy
 scoreboard objectives add FireworkCreeper dummy
 scoreboard objectives add Settings dummy
+scoreboard objectives add Dragon_Evokers dummy
 
 scoreboard players set _BASE_STOCK Settings 3
 scoreboard players set _RED_STOCK_MODIFIER Settings 0

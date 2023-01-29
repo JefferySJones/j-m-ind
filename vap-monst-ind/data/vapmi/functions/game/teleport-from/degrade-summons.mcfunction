@@ -1,9 +1,3 @@
-# Send zombies faster so that it's harder to send a ton of babies
-tag @e[tag=Summon_5,type=zombie] add Summon_1
-tag @e[tag=Summon_5,type=zombie] remove Summon_5
-tag @e[tag=Summon_5,type=zombified_piglin] add Summon_1
-tag @e[tag=Summon_5,type=zombified_piglin] remove Summon_5
-
 tag @e[tag=Summon_1] add Summon_0
 tag @e[tag=Summon_2] add Summon_1
 tag @e[tag=Summon_3] add Summon_2

@@ -10,6 +10,7 @@ execute if score _EVERY_SECOND Timers matches 0 run execute if score _SIDEBAR Ga
 function vapmi:utils/remove-all-eggs
 function vapmi:utils/clear-glass-bottles
 
+function vapmi:game/dragon-evoker/magician
 function vapmi:mobs/replace-special-creeper-villager
 function vapmi:mobs/replace-pogo-stray-villager
 execute if score _EVERY_SECOND Timers matches 0 run function vapmi:mobs/cleanup-tnt-heads
