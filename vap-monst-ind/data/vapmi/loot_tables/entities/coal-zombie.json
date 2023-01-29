@@ -50,8 +50,8 @@
           "entity": "killer_player",
           "scores": {
             "SummonedZombie": {
-              "min": 10,
-              "max": 39
+              "min": 25,
+              "max": 59
             }
           }
         }
@@ -82,8 +82,8 @@
           "entity": "killer_player",
           "scores": {
             "SummonedZombie": {
-              "min": 40,
-              "max": 79
+              "min": 60,
+              "max": 99
             }
           }
         }
@@ -116,7 +116,7 @@
           "entity": "killer_player",
           "scores": {
             "SummonedZombie": {
-              "min": 80,
+              "min": 100,
               "max": 99999
             }
           }
