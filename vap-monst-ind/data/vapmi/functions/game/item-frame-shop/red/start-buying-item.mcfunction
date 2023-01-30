@@ -41,6 +41,18 @@ execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:arrow"}]} run e
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_ingot"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:netherite_ingot 0
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:bone"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:bone 0
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:blaze_powder"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:blaze_powder 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:firework_rocket 0
+
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:husk_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg", tag:{EntityTag:{IsBaby:0b}}}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:zombie_spawn_egg{tag:{EntityTag:{IsBaby:0b}}} 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:skeleton_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:skeleton_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:stray_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:stray_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:witch_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:witch_spawn_egg 0 
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:spider_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:spider_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:cave_spider_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:cave_spider_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:wither_skeleton_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:wither_skeleton_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:creeper_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:creeper_spawn_egg 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:guardian_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:guardian_spawn_egg 0
 
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:sunflower"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:sunflower 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:spider_eye"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:spider_eye 0
@@ -51,6 +63,18 @@ execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:arrow"}]} run e
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_ingot"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:netherite_ingot 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:bone"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:bone 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:blaze_powder"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:blaze_powder 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:firework_rocket 0
+
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:husk_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg", tag:{EntityTag:{IsBaby:0b}}}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:zombie_spawn_egg{tag:{EntityTag:{IsBaby:0b}}} 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:skeleton_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:skeleton_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:stray_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:stray_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:witch_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:witch_spawn_egg 0 
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:spider_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:spider_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:cave_spider_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:cave_spider_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:wither_skeleton_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:wither_skeleton_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:creeper_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:creeper_spawn_egg 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:guardian_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:guardian_spawn_egg 0
 
 execute store result score _RED_BUY1_AVAIL ItemShop run data get storage vapmi:item-shop teams.Red.player.buy1.count
 execute store result score _RED_BUY2_AVAIL ItemShop run data get storage vapmi:item-shop teams.Red.player.buy2.count
