@@ -13,6 +13,6 @@ gamerule mobGriefing false
 gamerule keepInventory true
 gamerule universalAnger true
 gamerule doMobSpawning false
+gamerule doTileDrops false
 
 difficulty hard
-
