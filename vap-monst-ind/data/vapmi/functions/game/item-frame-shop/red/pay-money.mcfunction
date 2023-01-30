@@ -65,3 +65,4 @@ execute if score _RED_OWED2 ItemShop matches 1.. run scoreboard players operatio
 
 # Finish Buying
 execute if score _RED_OWED1 ItemShop matches ..0 if score _RED_OWED2 ItemShop matches ..0 run function vapmi:game/item-frame-shop/success
+execute if score _RED_OWED1 ItemShop matches ..0 if score _RED_OWED2 ItemShop matches ..0 run function vapmi:game/item-frame-shop/red/reset-tables

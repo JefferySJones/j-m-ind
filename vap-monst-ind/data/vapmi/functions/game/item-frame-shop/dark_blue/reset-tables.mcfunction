@@ -1,0 +1,14 @@
+tag @s remove buying
+
+scoreboard players reset _DARK_BLUE_BUYING ItemShop
+scoreboard players reset _DARK_BLUE_BUYING ItemShop
+scoreboard players reset _DARK_BLUE_BUY1_AVAIL ItemShop
+scoreboard players reset _DARK_BLUE_BUY2_AVAIL ItemShop
+scoreboard players reset _DARK_BLUE_OWED1 ItemShop
+scoreboard players reset _DARK_BLUE_OWED2 ItemShop
+scoreboard players reset _DARK_BLUE_HAS1 ItemShop
+scoreboard players reset _DARK_BLUE_HAS2 ItemShop
+scoreboard players reset _DARK_BLUE_CANT_BUY ItemShop
+scoreboard players reset _DARK_BLUE_BUY1_COUNT ItemShop
+scoreboard players reset _DARK_BLUE_BUY2_COUNT ItemShop
+scoreboard players reset _DARK_BLUE_SELL_COUNT ItemShop

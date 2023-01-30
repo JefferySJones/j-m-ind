@@ -42,6 +42,7 @@ execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_ingot
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:bone"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:bone 0
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:blaze_powder"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:blaze_powder 0
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:firework_rocket 0
+execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_scrap"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:netherite_scrap 0
 
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:husk_spawn_egg 0
 execute if block ^-4 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg", tag:{EntityTag:{IsBaby:0b}}}]} run execute store result storage vapmi:item-shop teams.Red.player.buy1.count int 1 run clear @p minecraft:zombie_spawn_egg{tag:{EntityTag:{IsBaby:0b}}} 0
@@ -64,6 +65,7 @@ execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_ingot
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:bone"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:bone 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:blaze_powder"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:blaze_powder 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:firework_rocket 0
+execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:netherite_scrap"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:netherite_scrap 0
 
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:husk_spawn_egg 0
 execute if block ^-3 ^-5 ^ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg", tag:{EntityTag:{IsBaby:0b}}}]} run execute store result storage vapmi:item-shop teams.Red.player.buy2.count int 1 run clear @p minecraft:zombie_spawn_egg{tag:{EntityTag:{IsBaby:0b}}} 0
@@ -113,6 +115,8 @@ tellraw @a [{"text": "Buy 1: "}, {"storage":"vapmi:item-shop","nbt":"teams.Red.b
 tellraw @a [{"text": "Buy 2: "}, {"storage":"vapmi:item-shop","nbt":"teams.Red.buy2.id"}, {"text": "("},  {"storage":"vapmi:item-shop","nbt":"teams.Red.buy2.count"}, {"text": ")"}]
 
 execute if score _RED_CANT_BUY ItemShop matches ..0 run function vapmi:game/item-frame-shop/failure
+execute if score _RED_CANT_BUY ItemShop matches ..0 run function vapmi:game/item-frame-shop/red/reset-tables
+
 
 
 
