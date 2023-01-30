@@ -1,4 +1,4 @@
-clone ^1 ^-5 ^ ^1 ^-5 ^ ^ ^ ^
+clone ^-1 ^-5 ^ ^-1 ^-5 ^ ^ ^ ^
 setblock ^ ^ ^ air destroy
 particle minecraft:dust 0 1 0 3 ^ ^ ^ 0 0 0 1 3 normal
 particle minecraft:glow_squid_ink ^ ^ ^ 0 0 0 0 3 normal
