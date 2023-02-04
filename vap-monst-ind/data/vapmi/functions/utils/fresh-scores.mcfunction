@@ -11,6 +11,8 @@ scoreboard players set SIDEBAR_TICKS Constants 200
 scoreboard players set 20 Constants 20
 scoreboard players set 10 Constants 10
 scoreboard players set 5 Constants 5
+scoreboard players set 4 Constants 4
+scoreboard players set 3 Constants 3
 scoreboard players set 2 Constants 2 
 scoreboard players set 1 Constants 1
 scoreboard players set ZERO Constants 0
@@ -121,3 +123,8 @@ scoreboard players set _PURPLE_FWCREEP FireworkCreeper 0
 scoreboard players set _PURPLE_PLAYER FireworkCreeper 0
 scoreboard players set _WHITE_FWCREEP FireworkCreeper 0
 scoreboard players set _WHITE_PLAYER FireworkCreeper 0
+
+# if you want an item frame to remain rotated, give it the decorative tag.
+# We may want to change this to an inclusion list instead of exclusion list -e.g. give the item frames we do want to reset the "ResetOnStart" tag
+execute as @e[type=item_frame,tag=!decorative,nbt=!{ItemRotation:0b}] run data modify entity @s ItemRotation set value 0b
+execute as @e[tag=buying] run tag @s remove buying

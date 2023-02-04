@@ -12,6 +12,36 @@ scoreboard objectives remove FireworkCreeper
 scoreboard objectives remove Dragon_Evokers
 scoreboard objectives remove ItemShop
 
+scoreboard objectives remove ItemShop_Award_Count
+scoreboard objectives remove ItemShop_Buying
+scoreboard objectives remove ItemShop_CantBuy
+scoreboard objectives remove ItemShop_Cost1_Count
+scoreboard objectives remove ItemShop_Cost2_Count
+scoreboard objectives remove ItemShop_Has1
+scoreboard objectives remove ItemShop_Has2
+scoreboard objectives remove ItemShop_Owed1
+scoreboard objectives remove ItemShop_Owed2
+scoreboard objectives remove ItemShop_Payment1
+scoreboard objectives remove ItemShop_Payment2
+scoreboard objectives remove ItemShop_Switching
+scoreboard objectives remove ItemShop_Mob_Switching
+scoreboard objectives remove ItemShop_Id
+
+scoreboard objectives add ItemShop_Award_Count dummy
+scoreboard objectives add ItemShop_Buying dummy
+scoreboard objectives add ItemShop_CantBuy dummy
+scoreboard objectives add ItemShop_Cost1_Count dummy
+scoreboard objectives add ItemShop_Cost2_Count dummy
+scoreboard objectives add ItemShop_Has1 dummy
+scoreboard objectives add ItemShop_Has2 dummy
+scoreboard objectives add ItemShop_Owed1 dummy
+scoreboard objectives add ItemShop_Owed2 dummy
+scoreboard objectives add ItemShop_Payment1 dummy
+scoreboard objectives add ItemShop_Payment2 dummy
+scoreboard objectives add ItemShop_Switching dummy
+scoreboard objectives add ItemShop_Mob_Switching dummy
+scoreboard objectives add ItemShop_Id dummy
+
 # Add main scoreboards
 scoreboard objectives add Timers dummy "Timers"
 scoreboard objectives add MobCount dummy "Mob Count"
