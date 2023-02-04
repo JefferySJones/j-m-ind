@@ -9,7 +9,7 @@ execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]}
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:netherite_scrap"}]} run clear @p minecraft:netherite_scrap 2
 
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run clear @p minecraft:husk_spawn_egg 2
-execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg", tag:{EntityTag:{IsBaby:0b}}}]} run clear @p minecraft:zombie_spawn_egg{tag:{EntityTag:{IsBaby:0b}}} 2
+execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg"}]} run clear @p minecraft:zombie_spawn_egg 2
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:skeleton_spawn_egg"}]} run clear @p minecraft:skeleton_spawn_egg 2
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:stray_spawn_egg"}]} run clear @p minecraft:stray_spawn_egg 2
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:witch_spawn_egg"}]} run clear @p minecraft:witch_spawn_egg 2 

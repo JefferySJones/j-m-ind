@@ -42,28 +42,25 @@ execute if score _EVERY_SECOND Timers matches 0 run function vapmi:scoreboards/u
 # execute if score _EVERY_SECOND Timers matches 12 run function vapmi:game/firework-creeper/degrade-tag-and-tp
 # execute if score _EVERY_SECOND Timers matches 16 run function vapmi:game/firework-creeper/degrade-tag-and-tp
 
-execute as @e[name="ItemFrameShop"] at @s run function vapmi:game/item-frame-shop/trigger-buy
-execute as @e[name="ItemFrameShop"] at @s run function vapmi:game/item-frame-shop/next-shop
-
 #--- Villagers and Tiers ---#
-# function vapmi:utils/manage-tiers/investments-1
-# function vapmi:utils/manage-tiers/investments-2
-# function vapmi:utils/manage-tiers/investments-3
+function vapmi:utils/manage-tiers/investments-1
+function vapmi:utils/manage-tiers/investments-2
+function vapmi:utils/manage-tiers/investments-3
 
-# function vapmi:utils/manage-tiers/synergy-2
-# function vapmi:utils/manage-tiers/synergy-3
+function vapmi:utils/manage-tiers/synergy-2
+function vapmi:utils/manage-tiers/synergy-3
 
-# function vapmi:utils/manage-tiers/potions-2
-# function vapmi:utils/manage-tiers/potions-3
+function vapmi:utils/manage-tiers/potions-2
+function vapmi:utils/manage-tiers/potions-3
 
-# function vapmi:utils/manage-tiers/weapons-2
-# function vapmi:utils/manage-tiers/weapons-3
+function vapmi:utils/manage-tiers/weapons-2
+function vapmi:utils/manage-tiers/weapons-3
 
-# function vapmi:utils/manage-tiers/armor-2
-# function vapmi:utils/manage-tiers/armor-3
+function vapmi:utils/manage-tiers/armor-2
+function vapmi:utils/manage-tiers/armor-3
 
-# function vapmi:utils/manage-tiers/food-2
-# function vapmi:utils/manage-tiers/food-3
+function vapmi:utils/manage-tiers/food-2
+function vapmi:utils/manage-tiers/food-3
 
 # execute as @e[type=minecraft:zoglin,y_rotation=-45..45] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~ ~ ~0.1
 # execute as @e[type=minecraft:zoglin,y_rotation=-134.9..-45.1] run execute if entity @p[distance=0..10] run execute at @s run tp @s ~0.1 ~ ~

@@ -21,8 +21,6 @@ scoreboard objectives add ItemShop_CantBuy dummy
 scoreboard objectives add ItemShop_Has1 dummy
 scoreboard objectives add ItemShop_Has2 dummy
 
-scoreboard players set @e[name="ItemFrameShop",limit=1,sort=nearest] ItemShop_Buying 1
-
 # Store cost for each item
 execute positioned ^-4 ^-5 ^ store result score @e[name="ItemFrameShop",limit=1,sort=nearest] ItemShop_Cost1_Count run data get block ~ ~ ~ Items[0].Count
 execute positioned ^-3 ^-5 ^ store result score @e[name="ItemFrameShop",limit=1,sort=nearest] ItemShop_Cost2_Count run data get block ~ ~ ~ Items[0].Count

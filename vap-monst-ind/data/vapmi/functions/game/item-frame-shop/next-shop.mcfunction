@@ -34,5 +34,3 @@ execute if score @s ItemShop_Switching matches 1..2 run scoreboard players set @
 execute if score @s ItemShop_Mob_Switching matches 1..2 run scoreboard players set @s ItemShop_Mob_Switching 0
 execute as @e[tag=attemptingSwitchShop,sort=nearest,limit=1] run data modify entity @s ItemRotation set value 0b
 execute as @e[tag=attemptingSwitchShop,sort=nearest,limit=1] run tag @s remove attemptingSwitchShop
-
-
