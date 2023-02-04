@@ -13,11 +13,16 @@ execute if score _WHITE_CURRENT Cauldron matches 3 run function vapmi:game/cauld
 execute if score _WHITE_CURRENT Cauldron matches 2 run function vapmi:game/cauldron-game/white/check-2
 execute if score _WHITE_CURRENT Cauldron matches 1 run function vapmi:game/cauldron-game/white/check-1
 
-execute if score _WHITE_METER Cauldron matches 0 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~2 ~ gray_wool
-execute if score _WHITE_METER Cauldron matches 1 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~ ~ orange_wool
-execute if score _WHITE_METER Cauldron matches 2 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~1 ~ orange_wool
-execute if score _WHITE_METER Cauldron matches 3 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~2 ~ orange_wool
-execute if score _WHITE_METER Cauldron matches 4 run function vapmi:game/cauldron-game/white/reward
+# execute if score _WHITE_METER Cauldron matches 0 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~2 ~ gray_wool
+# execute if score _WHITE_METER Cauldron matches 1 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~ ~ orange_wool
+# execute if score _WHITE_METER Cauldron matches 2 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~1 ~ orange_wool
+# execute if score _WHITE_METER Cauldron matches 3 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~2 ~ orange_wool
+# execute if score _WHITE_METER Cauldron matches 4 run function vapmi:game/cauldron-game/white/reward
+
+execute if score _WHITE_METER Cauldron matches 0 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~ ~ orange_wool
+execute if score _WHITE_METER Cauldron matches 1 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~1 ~ orange_wool
+execute if score _WHITE_METER Cauldron matches 2 run execute at @e[name="CauldronW"] positioned ~-2 ~ ~1 run fill ~ ~ ~ ~ ~2 ~ orange_wool
+execute if score _WHITE_METER Cauldron matches 3 run function vapmi:game/cauldron-game/white/reward
 
 # Reset Positioning
 execute at @e[name="CauldronW"] run execute if entity @e[type=minecraft:item_frame,distance=0..2,nbt={Item:{id:"minecraft:yellow_dye"},ItemRotation:1b}] run execute at @e[name="CauldronW"] run data merge entity @e[limit=1,type=minecraft:item_frame,distance=0..2,nbt={Item:{id:"minecraft:yellow_dye"},ItemRotation:1b}] {ItemRotation:0}
