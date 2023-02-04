@@ -19,14 +19,14 @@ execute if score _POTIONS_TIER VillagerStateWhite matches 1 at @a[team=White] ru
 # execute if score _POTIONS_TIER VillagerStateWhite matches 1 if entity @e[team=White,advancements={vapmi:upgrade_potions_1=true}] run execute at @e[name="ShopW"] positioned ~1.1 ~-0.5 ~ run function vapmi:villagers/summon-new-potions-2
 
 # Update Item Frame Shop
-execute if score _POTIONS_TIER VillagerStateRed matches 1 as @e[name="CenterR"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateOrange matches 1 as @e[name="CenterO"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateYellow matches 1 as @e[name="CenterY"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateGreen matches 1 as @e[name="CenterG"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateBlue matches 1 as @e[name="CenterB"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateDarkBlue matches 1 as @e[name="CenterDB"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStatePurple matches 1 as @e[name="CenterP"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
-execute if score _POTIONS_TIER VillagerStateWhite matches 1 as @e[name="CenterW"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterR"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateOrange matches 1 if entity @e[team=Orange,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterO"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateYellow matches 1 if entity @e[team=Yellow,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterY"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateGreen matches 1 if entity @e[team=Green,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterG"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateBlue matches 1 if entity @e[team=Blue,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterB"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateDarkBlue matches 1 if entity @e[team=Dark_Blue,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterDB"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStatePurple matches 1 if entity @e[team=Purple,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterP"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
+execute if score _POTIONS_TIER VillagerStateWhite matches 1 if entity @e[team=White,advancements={vapmi:upgrade_potions_1=true}] as @e[name="CenterW"] at @s run execute as @e[name="ItemFrameShop",tag=upgradeable,limit=1,sort=nearest] run function vapmi:game/item-frame-shop/upgrade-shop
 
 # Teleport them facing the right way
 # execute if score _POTIONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_potions_1=true}] run execute at @e[name="ShopR"] run execute as @e[distance=0..10,type=minecraft:villager] run execute at @s run tp @s ~ ~ ~ facing entity @e[team=Red,limit=1,type=armor_stand,name="CenterR"]
@@ -39,9 +39,9 @@ execute if score _POTIONS_TIER VillagerStateWhite matches 1 as @e[name="CenterW"
 # execute if score _POTIONS_TIER VillagerStateWhite matches 1 if entity @e[team=White,advancements={vapmi:upgrade_potions_1=true}] run execute at @e[name="ShopW"] run execute as @e[distance=0..10,type=minecraft:villager] run execute at @s run tp @s ~ ~ ~ facing entity @e[team=White,limit=1,type=armor_stand,name="CenterW"]
 
 # Upgrade tier if someone gets the advancement
+execute if score _POTIONS_TIER VillagerStateYellow matches 1 if entity @e[team=Yellow,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateYellow 2
 execute if score _POTIONS_TIER VillagerStateRed matches 1 if entity @e[team=Red,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateRed 2
 execute if score _POTIONS_TIER VillagerStateOrange matches 1 if entity @e[team=Orange,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateOrange 2
-execute if score _POTIONS_TIER VillagerStateYellow matches 1 if entity @e[team=Yellow,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateYellow 2
 execute if score _POTIONS_TIER VillagerStateGreen matches 1 if entity @e[team=Green,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateGreen 2
 execute if score _POTIONS_TIER VillagerStateBlue matches 1 if entity @e[team=Blue,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateBlue 2
 execute if score _POTIONS_TIER VillagerStateDarkBlue matches 1 if entity @e[team=Dark_Blue,advancements={vapmi:upgrade_potions_1=true}] run scoreboard players set _POTIONS_TIER VillagerStateDarkBlue 2
