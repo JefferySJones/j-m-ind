@@ -109,7 +109,8 @@ scoreboard players set _CURRENT GameState 2
 
 # Reset Shops
 execute as @e[name="ItemFrameShop"] run scoreboard players set @s ItemShop_Id 0
-execute as @e[name="ItemFrameShop"] run function vapmi:game/item-frame-shop/update-items
+execute as @e[name="ItemFrameShop",tag=upgradeable] at @s run function vapmi:game/item-frame-shop/generic/reset-item-shop
+execute as @e[name="ItemFrameShop",tag=upgradeable] at @s run function vapmi:game/item-frame-shop/update-items
 
 # Move all the creepers real quick
 function vapmi:game/firework-creeper/move-creeper/red
