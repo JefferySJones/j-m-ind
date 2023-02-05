@@ -5,8 +5,9 @@ execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:coal"}]} run clear 
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:chicken"}]} run clear @p minecraft:chicken 20
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:arrow"}]} run clear @p minecraft:arrow 20
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:netherite_ingot"}]} run clear @p minecraft:netherite_ingot 20
-execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run clear @p minecraft:firework_rocket 1
-execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:netherite_scrap"}]} run clear @p minecraft:netherite_scrap 1
+execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:firework_rocket"}]} run clear @p minecraft:firework_rocket 20
+execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:blaze_powder"}]} run clear @p minecraft:blaze_powder 20
+execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:netherite_scrap"}]} run clear @p minecraft:netherite_scrap 20
 
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:husk_spawn_egg"}]} run clear @p minecraft:husk_spawn_egg 20
 execute if block ~ ~ ~ chest{Items:[{Slot:0b, id: "minecraft:zombie_spawn_egg"}]} run clear @p minecraft:zombie_spawn_egg 20

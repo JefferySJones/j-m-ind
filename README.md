@@ -2,7 +2,7 @@
 
 ## Changelog:
 
-### v1.2.5a
+### v1.2.7a
 
 ### Setup Instructions
 1. Put vap-monst-ind datapack into your world

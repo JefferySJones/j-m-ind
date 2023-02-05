@@ -1,0 +1,2 @@
+execute if score _EVERY_TWO_SECONDS Timers matches 0 run execute as @e[type=minecraft:bee,nbt={HasStung:true}] run data modify entity @s AngerTime set value 999999
+execute if score _EVERY_TWO_SECONDS Timers matches 0 run execute as @e[type=minecraft:bee,nbt={HasStung:true}] run data modify entity @s HasStung set value false
