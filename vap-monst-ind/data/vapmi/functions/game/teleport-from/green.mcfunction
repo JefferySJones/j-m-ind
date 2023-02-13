@@ -15,7 +15,7 @@ execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[distance=0..
 execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..5,team=] run team join Green @s
 
 # TP to Staging Area
-execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..2,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
+execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..4,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
 execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[type=minecraft:zombie,name=!"Baby Zombie",distance=0..5,nbt={IsBaby:true}] run function vapmi:mobs/replace-naughty-baby
 execute at @e[name="CenterG"] positioned ~-21 ~ ~ run execute as @e[type=minecraft:zombified_piglin,name=!"Baby Zombified Piglin",distance=0..5,nbt={IsBaby:true}] run function vapmi:mobs/replace-naughty-baby
 

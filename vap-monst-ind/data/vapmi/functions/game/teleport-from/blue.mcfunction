@@ -22,7 +22,7 @@ execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[type=minecra
 execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[type=minecraft:zombified_piglin,name=!"Baby Zombified Piglin",distance=0..5,nbt={IsBaby:true}] run function vapmi:mobs/replace-naughty-baby
 
 # TP to Staging Area
-execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..2,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
+execute at @e[name="CenterB"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..4,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
 
 # Pick Matching Target, Get Entitys At the Spawner using CenterB, Radius the size of spawner (0..2), Teleport to random spawn point of the target color
 # Red

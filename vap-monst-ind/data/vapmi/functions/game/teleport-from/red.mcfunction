@@ -22,7 +22,7 @@ execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[type=minecra
 execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[type=minecraft:zombified_piglin,name=!"Baby Zombified Piglin",distance=0..5,nbt={IsBaby:true}] run function vapmi:mobs/replace-naughty-baby
 
 # TP to Staging Area
-execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..2,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
+execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[type=!player,type=!armor_stand,type=!villager,distance=0..4,tag=Summon_3] run execute at @s run tp @s ~ ~4 ~
 
 # Orange
 execute if score _RED_TARGET GameState matches 2 run execute at @e[name="CenterR"] positioned ~-21 ~ ~ run execute as @e[distance=0..6,team=Red,tag=Summon_1,type=!minecraft:player,type=!minecraft:item] at @e[type=minecraft:armor_stand,name="SpawnO",sort=random,limit=1] run tp ~ ~1 ~

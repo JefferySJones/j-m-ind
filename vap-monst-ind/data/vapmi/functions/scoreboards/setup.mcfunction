@@ -41,6 +41,7 @@ scoreboard objectives add ItemShop_Payment2 dummy
 scoreboard objectives add ItemShop_Switching dummy
 scoreboard objectives add ItemShop_Mob_Switching dummy
 scoreboard objectives add ItemShop_Id dummy
+scoreboard objectives add ItemShop_Open dummy
 
 # Add main scoreboards
 scoreboard objectives add Timers dummy "Timers"
@@ -55,6 +56,7 @@ scoreboard objectives add Cauldron dummy
 scoreboard objectives add FireworkCreeper dummy
 scoreboard objectives add Settings dummy
 scoreboard objectives add Dragon_Evokers dummy
+scoreboard objectives add Dragon_Evokers_Age dummy
 scoreboard objectives add ItemShop dummy
 
 scoreboard players set _BASE_STOCK Settings 3

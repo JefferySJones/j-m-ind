@@ -1,0 +1,23 @@
+execute if score GAME_TIME_SECONDS Timers matches 1 run bossbar set minecraft:gametime color blue
+execute if score GAME_TIME_SECONDS Timers matches 1 run bossbar set minecraft:gametime name "Stage 1"
+execute if score GAME_TIME_SECONDS Timers matches 1 run bossbar set minecraft:gametime value 100
+execute if score GAME_TIME_SECONDS Timers matches 30 run bossbar set minecraft:gametime value 95
+execute if score GAME_TIME_SECONDS Timers matches 60 run bossbar set minecraft:gametime value 90
+execute if score GAME_TIME_SECONDS Timers matches 90 run bossbar set minecraft:gametime value 85
+execute if score GAME_TIME_SECONDS Timers matches 120 run bossbar set minecraft:gametime value 80
+execute if score GAME_TIME_SECONDS Timers matches 150 run bossbar set minecraft:gametime value 75
+execute if score GAME_TIME_SECONDS Timers matches 180 run bossbar set minecraft:gametime value 70
+execute if score GAME_TIME_SECONDS Timers matches 210 run bossbar set minecraft:gametime value 65
+execute if score GAME_TIME_SECONDS Timers matches 240 run bossbar set minecraft:gametime value 60
+execute if score GAME_TIME_SECONDS Timers matches 270 run bossbar set minecraft:gametime value 55
+execute if score GAME_TIME_SECONDS Timers matches 300 run bossbar set minecraft:gametime value 50
+execute if score GAME_TIME_SECONDS Timers matches 330 run bossbar set minecraft:gametime value 45
+execute if score GAME_TIME_SECONDS Timers matches 360 run bossbar set minecraft:gametime value 40
+execute if score GAME_TIME_SECONDS Timers matches 390 run bossbar set minecraft:gametime value 35
+execute if score GAME_TIME_SECONDS Timers matches 420 run bossbar set minecraft:gametime value 30
+execute if score GAME_TIME_SECONDS Timers matches 450 run bossbar set minecraft:gametime value 25
+execute if score GAME_TIME_SECONDS Timers matches 480 run bossbar set minecraft:gametime value 20
+execute if score GAME_TIME_SECONDS Timers matches 510 run bossbar set minecraft:gametime value 15
+execute if score GAME_TIME_SECONDS Timers matches 540 run bossbar set minecraft:gametime value 10
+execute if score GAME_TIME_SECONDS Timers matches 570 run bossbar set minecraft:gametime value 5
+execute if score GAME_TIME_SECONDS Timers matches 600 run bossbar set minecraft:gametime value 0

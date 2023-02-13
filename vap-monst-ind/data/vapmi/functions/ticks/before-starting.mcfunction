@@ -1,5 +1,3 @@
-say "Before Starting!"
-
 scoreboard objectives setdisplay list Coins
 time set night
 gamemode spectator @a[team=Spectator]
@@ -106,6 +104,8 @@ kill @e[type=villager]
 
 # Change to Starting
 scoreboard players set _CURRENT GameState 2
+
+execute as @e[name="ItemFrameShop"] run scoreboard players set @s ItemShop_Open 1
 
 # Reset Shops
 execute as @e[name="ItemFrameShop"] run scoreboard players set @s ItemShop_Id 0

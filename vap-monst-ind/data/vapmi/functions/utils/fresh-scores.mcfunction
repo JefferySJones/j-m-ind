@@ -124,6 +124,8 @@ scoreboard players set _PURPLE_PLAYER FireworkCreeper 0
 scoreboard players set _WHITE_FWCREEP FireworkCreeper 0
 scoreboard players set _WHITE_PLAYER FireworkCreeper 0
 
+scoreboard players set GAME_TIME_SECONDS Timers 0
+
 # if you want an item frame to remain rotated, give it the decorative tag.
 # We may want to change this to an inclusion list instead of exclusion list -e.g. give the item frames we do want to reset the "ResetOnStart" tag
 execute as @e[type=item_frame,tag=!decorative,nbt=!{ItemRotation:0b}] run data modify entity @s ItemRotation set value 0b
